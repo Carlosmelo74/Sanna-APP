@@ -58,11 +58,14 @@ Transformar la incertidumbre del paciente en calma y seguridad desde el primer c
 - **Anfitriona**: https://sanna-protocolos.pages.dev/protocolo3-anfitriona
 - **Admisionista/Modular**: https://sanna-protocolos.pages.dev/protocolo3-admisionista
 
-### **Protocolo #4: Gestión de la Espera** 🆕
+### **Protocolo #4: Gestión de la Espera**
 - **Modular**: https://sanna-protocolos.pages.dev/protocolo4-modular
 
+### **Protocolo #5: Proceso de Pago** 🆕
+- **Admisionista/Modular**: https://sanna-protocolos.pages.dev/protocolo5-pago
+
 ### **Deployment Actual**
-- **Último Deploy**: https://bbb2f6fc.sanna-protocolos.pages.dev
+- **Último Deploy**: https://f6649028.sanna-protocolos.pages.dev
 - **Proyecto Cloudflare**: sanna-protocolos
 - **Estado**: ✅ Activo y funcionando
 
@@ -137,17 +140,27 @@ Esta app sirve para:
 - ✅ 3 momentos clave con énfasis en "Cierre de Verificación"
 - ✅ Sistema de "Llamada de 1 Minuto" para coordinación proactiva
 
-#### **Protocolo #4: Gestión de la Espera** 🆕
+#### **Protocolo #4: Gestión de la Espera**
 - ✅ Modular (gestión de sala de espera y demoras)
 - ✅ 3 momentos con indicadores de tiempo (+15min, +30min)
 - ✅ Comunicación proactiva de demoras
 - ✅ Gestión personalizada con opciones al paciente
 - ✅ Orientación post-consulta proactiva
 
+#### **Protocolo #5: Proceso de Pago** 🆕
+- ✅ Admisionista/Modular (cierre administrativo)
+- ✅ 3 pasos del flujo de pago: Explicación, Entrega, Cierre Emocional
+- ✅ 4 situaciones complejas con guiones de acción:
+  - Paciente no entiende el cobro
+  - Inconsistencias con seguros
+  - Fallas técnicas del sistema
+  - Paciente molesto (protocolo de escalación)
+- ✅ Énfasis en transparencia y construcción de confianza
+
 ## 🔜 Próximos Pasos Recomendados
 
-1. **Agregar Protocolo #5** siguiendo la estructura establecida
-2. **Testing con usuarios reales** del personal SANNA
+1. **Testing con usuarios reales** del personal SANNA
+2. **Recopilar feedback** sobre la usabilidad de los protocolos
 3. **Agregar módulo de evaluación** (quiz de conocimientos)
 4. **Sistema de búsqueda** de guiones específicos
 5. **Versión offline** (PWA) para consulta sin internet
