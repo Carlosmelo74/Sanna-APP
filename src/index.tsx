@@ -167,6 +167,37 @@ app.get('/', (c) => {
                         </div>
                     </div>
                 </div>
+
+                <!-- Protocolo #3 -->
+                <div class="card-role p-8 mb-6">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                        <div class="flex-1">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-lg font-bold mr-4">#3</span>
+                                <div>
+                                    <h3 class="text-2xl font-bold mb-1" style="color: var(--sanna-green);">
+                                        Derivación y Coordinación
+                                    </h3>
+                                    <p class="text-gray-600">Acompañamiento y coordinación interáreas</p>
+                                </div>
+                            </div>
+                            <div class="ml-16 mb-4">
+                                <p class="text-gray-700 mb-2">
+                                    <i class="fas fa-users mr-2" style="color: var(--sanna-green);"></i>
+                                    <strong>Roles:</strong> Anfitriona, Admisionista, Modular
+                                </p>
+                                <p class="text-gray-600 text-sm">
+                                    Protocolos para acompañar pacientes vulnerables y coordinar derivaciones seguras
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-auto">
+                            <a href="/protocolo3" class="sanna-btn block text-center whitespace-nowrap">
+                                Ver Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Footer -->
@@ -1430,6 +1461,161 @@ app.get('/protocolo2', (c) => {
   `)
 })
 
+// Página de selección de cargo - Protocolo #3
+app.get('/protocolo3', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protocolo #3 - Selecciona tu Cargo | SANNA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+            
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            :root {
+                --sanna-green: #008542;
+                --sanna-dark-green: #006633;
+                --sanna-light-green: #00a854;
+            }
+            
+            body {
+                background: linear-gradient(135deg, #f0fdf4 0%, #e8f5e9 100%);
+                min-height: 100vh;
+            }
+            
+            .card-role {
+                transition: all 0.3s ease;
+                background: white;
+                border-radius: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            .card-role:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 24px rgba(0, 133, 66, 0.2);
+            }
+            
+            .sanna-btn {
+                background: var(--sanna-green);
+                color: white;
+                padding: 16px 32px;
+                border-radius: 12px;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                border: none;
+                cursor: pointer;
+                display: inline-block;
+                text-decoration: none;
+            }
+            
+            .sanna-btn:hover {
+                background: var(--sanna-dark-green);
+                transform: scale(1.05);
+            }
+            
+            .back-btn {
+                background: var(--sanna-green);
+                color: white;
+                padding: 12px 24px;
+                border-radius: 10px;
+                text-decoration: none;
+                display: inline-block;
+                transition: all 0.3s ease;
+            }
+            
+            .back-btn:hover {
+                background: var(--sanna-dark-green);
+                transform: translateX(-5px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mx-auto px-4 py-8 max-w-5xl">
+            <!-- Header -->
+            <div class="mb-8">
+                <a href="/" class="back-btn mb-4">
+                    <i class="fas fa-arrow-left mr-2"></i> Volver a Protocolos
+                </a>
+            </div>
+
+            <!-- Título -->
+            <div class="text-center mb-12">
+                <div class="inline-block bg-green-100 text-green-800 px-6 py-3 rounded-full text-lg font-bold mb-4">
+                    PROTOCOLO #3
+                </div>
+                <h1 class="text-4xl font-bold mb-3" style="color: var(--sanna-green);">
+                    Derivación y Coordinación
+                </h1>
+                <p class="text-xl text-gray-600 mb-6">Acompañamiento y coordinación interáreas</p>
+                <p class="text-gray-500 max-w-2xl mx-auto">
+                    Selecciona tu cargo para ver los protocolos específicos de tu rol
+                </p>
+            </div>
+
+            <!-- Selector de Cargo -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Anfitriona -->
+                <div class="card-role p-8 text-center">
+                    <div class="mb-6">
+                        <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
+                            <i class="fas fa-route text-5xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">Anfitriona</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Guardiana del recorrido del paciente vulnerable</p>
+                    <a href="/protocolo3-anfitriona" class="sanna-btn w-full block text-center">
+                        Ver Mi Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Admisionista -->
+                <div class="card-role p-8 text-center">
+                    <div class="mb-6">
+                        <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
+                            <i class="fas fa-directions text-5xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">Admisionista</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Punto de partida del recorrido interno seguro</p>
+                    <a href="/protocolo3-admisionista" class="sanna-btn w-full block text-center">
+                        Ver Mi Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Modular -->
+                <div class="card-role p-8 text-center">
+                    <div class="mb-6">
+                        <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
+                            <i class="fas fa-exchange-alt text-5xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">Modular</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Coordinación y derivación entre áreas</p>
+                    <a href="/protocolo3-modular" class="sanna-btn w-full block text-center">
+                        Ver Mi Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center">
+                <a href="/" class="back-btn">
+                    <i class="fas fa-home mr-2"></i> Volver a Inicio
+                </a>
+            </div>
+        </div>
+    </body>
+    </html>
+  `)
+})
+
 // Alias para mantener compatibilidad con URLs antiguas
 app.get('/anfitriona', (c) => c.redirect('/protocolo1-anfitriona'))
 app.get('/admisionista', (c) => c.redirect('/protocolo1-admisionista'))
@@ -2306,6 +2492,715 @@ app.get('/protocolo2-modular', (c) => {
     </body>
     </html>
   `)
+})
+
+// PROTOCOLO #3: Derivación, Acompañamiento y Coordinación - Anfitriona
+app.get('/protocolo3-anfitriona', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protocolo #3 - Anfitriona | SANNA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+            
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            :root {
+                --sanna-green: #008542;
+                --sanna-dark-green: #006633;
+                --sanna-light-green: #00a854;
+            }
+            
+            body {
+                background: linear-gradient(135deg, #f0fdf4 0%, #e8f5e9 100%);
+                min-height: 100vh;
+            }
+            
+            .protocol-card {
+                background: white;
+                border-radius: 16px;
+                padding: 24px;
+                margin-bottom: 24px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                border-left: 6px solid var(--sanna-green);
+            }
+            
+            .guion-box {
+                background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+                border-left: 4px solid var(--sanna-green);
+                padding: 16px;
+                border-radius: 12px;
+                margin: 12px 0;
+            }
+            
+            .back-btn {
+                background: var(--sanna-green);
+                color: white;
+                padding: 12px 24px;
+                border-radius: 10px;
+                text-decoration: none;
+                display: inline-block;
+                transition: all 0.3s ease;
+            }
+            
+            .back-btn:hover {
+                background: var(--sanna-dark-green);
+                transform: translateX(-5px);
+            }
+            
+            .step-number {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background: var(--sanna-green);
+                color: white;
+                border-radius: 50%;
+                font-weight: bold;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mx-auto px-4 py-8 max-w-5xl">
+            <!-- Header -->
+            <div class="mb-8">
+                <a href="/" class="back-btn mb-4">
+                    <i class="fas fa-arrow-left mr-2"></i> Volver al Inicio
+                </a>
+            </div>
+
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
+                    <i class="fas fa-route text-4xl text-white"></i>
+                </div>
+                <div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-bold mb-3">
+                    PROTOCOLO #3: DERIVACIÓN Y COORDINACIÓN
+                </div>
+                <h1 class="text-4xl font-bold mb-2" style="color: var(--sanna-green);">Anfitriona</h1>
+                <p class="text-xl text-gray-600">Guardiana del Recorrido del Paciente</p>
+            </div>
+
+            <!-- Tu Misión -->
+            <div class="protocol-card bg-gradient-to-r from-green-50 to-emerald-50">
+                <h2 class="text-2xl font-bold mb-4 flex items-center" style="color: var(--sanna-green);">
+                    <i class="fas fa-bullseye mr-3"></i> Tu Misión
+                </h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Eres la <strong>guardiana del recorrido del paciente vulnerable</strong>. Tu objetivo es usar tu 
+                    <strong class="text-xl" style="color: var(--sanna-green);">"Radar de Ayuda"</strong> 
+                    para detectar a quienes más lo necesitan y ofrecer un acompañamiento físico que transforme un 
+                    trayecto potencialmente estresante y de mucha desorientación en una experiencia de cuidado y conexión humana.
+                </p>
+            </div>
+
+            <!-- Momentos Clave -->
+            <div class="protocol-card">
+                <h2 class="text-3xl font-bold mb-6 flex items-center" style="color: var(--sanna-green);">
+                    <i class="fas fa-star mr-3"></i> Momentos Clave del Acompañamiento
+                </h2>
+
+                <!-- Momento 1 -->
+                <div class="mb-8">
+                    <div class="flex items-start mb-4">
+                        <span class="step-number mr-4">1</span>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2" style="color: var(--sanna-dark-green);">
+                                Detección Proactiva
+                            </h3>
+                            <p class="text-gray-500 text-lg">Tu "Radar de Ayuda"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ml-14">
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg mb-4">
+                            <p class="font-semibold text-blue-900 mb-2">
+                                <i class="fas fa-running mr-2"></i> ACCIÓN:
+                            </p>
+                            <p class="text-blue-800">
+                                Mantente siempre atenta a pacientes que parezcan desorientados, ansiosos, adultos mayores, 
+                                gestantes o con niños o con alguna otra vulnerabilidad. <strong>Acércate antes de que pidan ayuda.</strong>
+                            </p>
+                        </div>
+
+                        <div class="guion-box">
+                            <p class="font-bold mb-3 text-lg" style="color: var(--sanna-green);">
+                                <i class="fas fa-comment-dots mr-2"></i> GUIÓN:
+                            </p>
+                            <p class="text-gray-900 italic text-lg">
+                                (Acercándose con una sonrisa abierta) "Buenas tardes, mi nombre es [Nombre]. Noto que quizás busca 
+                                alguna orientación. Estoy aquí para ayudarle."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Momento 2 -->
+                <div class="mb-8">
+                    <div class="flex items-start mb-4">
+                        <span class="step-number mr-4">2</span>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2" style="color: var(--sanna-dark-green);">
+                                El Acompañamiento que Conecta
+                            </h3>
+                        </div>
+                    </div>
+                    
+                    <div class="ml-14">
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg mb-4">
+                            <p class="font-semibold text-blue-900 mb-2">
+                                <i class="fas fa-running mr-2"></i> ACCIÓN:
+                            </p>
+                            <p class="text-blue-800">
+                                Durante el trayecto, mantén una conversación breve y cálida. Muestra interés genuino.
+                            </p>
+                        </div>
+
+                        <div class="guion-box">
+                            <p class="font-bold mb-3 text-lg" style="color: var(--sanna-green);">
+                                <i class="fas fa-comment-dots mr-2"></i> GUIÓN:
+                            </p>
+                            <p class="text-gray-900 italic text-lg">
+                                "Venga por aquí, vamos juntos. Queremos que se sienta seguro/a en todo momento en nuestra clínica. 
+                                ¿Es su primera visita con nosotros?"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Momento 3 -->
+                <div class="mb-8">
+                    <div class="flex items-start mb-4">
+                        <span class="step-number mr-4">3</span>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2" style="color: var(--sanna-dark-green);">
+                                El "Handoff Cálido"
+                            </h3>
+                            <p class="text-gray-500 text-lg">La Entrega de Posta Perfecta</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ml-14">
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg mb-4">
+                            <p class="font-semibold text-blue-900 mb-2">
+                                <i class="fas fa-running mr-2"></i> ACCIÓN:
+                            </p>
+                            <p class="text-blue-800">
+                                Al llegar al destino, <strong>no dejes al paciente en la puerta</strong>. Preséntalo por su nombre 
+                                al colega del área receptora para crear una cadena de cuidado.
+                            </p>
+                        </div>
+
+                        <div class="guion-box">
+                            <p class="font-bold mb-3 text-lg" style="color: var(--sanna-green);">
+                                <i class="fas fa-comment-dots mr-2"></i> GUIÓN:
+                            </p>
+                            <div class="mb-3">
+                                <p class="font-semibold text-gray-700 mb-2">(Al colega receptor):</p>
+                                <p class="text-gray-900 italic text-lg">
+                                    "Hola [Nombre del colega], te presento al Sr./Sra. [Apellido], viene para su [procedimiento]."
+                                </p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-700 mb-2">(Al paciente, para cerrar):</p>
+                                <p class="text-gray-900 italic text-lg">
+                                    "Sr./Sra. [Apellido], lo dejo en las excelentes manos de mi compañera/o. Que tenga un buen día."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recordatorio Final -->
+            <div class="protocol-card bg-gradient-to-r from-yellow-50 to-amber-50 border-l-8 border-yellow-500">
+                <h2 class="text-2xl font-bold mb-4 flex items-center text-yellow-800">
+                    <i class="fas fa-lightbulb mr-3"></i> Recordatorio Clave
+                </h2>
+                <p class="text-lg text-yellow-900 leading-relaxed">
+                    Tu rol es ser la <strong>garantía de que nadie se sienta perdido o solo</strong> en nuestra clínica. 
+                    Cada acompañamiento es una demostración viva de que <strong>"hacemos posible lo increíble"</strong>.
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-12">
+                <a href="/" class="back-btn">
+                    <i class="fas fa-home mr-2"></i> Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </body>
+    </html>
+  `)
+})
+
+// PROTOCOLO #3: Derivación, Acompañamiento y Coordinación - Admisionista/Modular
+app.get('/protocolo3-admisionista', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protocolo #3 - Admisionista/Modular | SANNA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+            
+            :root {
+                --sanna-green: #008542;
+                --sanna-dark-green: #006633;
+                --sanna-light-green: #00a854;
+            }
+            
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            body {
+                background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                min-height: 100vh;
+            }
+            
+            .protocol-header {
+                background: linear-gradient(135deg, var(--sanna-green) 0%, var(--sanna-dark-green) 100%);
+                color: white;
+                padding: 2rem;
+                border-radius: 15px;
+                margin-bottom: 2rem;
+                box-shadow: 0 10px 30px rgba(0, 133, 66, 0.3);
+            }
+            
+            .content-card {
+                background: white;
+                border-radius: 15px;
+                padding: 2rem;
+                margin-bottom: 1.5rem;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                border-left: 5px solid var(--sanna-green);
+                transition: all 0.3s ease;
+            }
+            
+            .content-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 30px rgba(0, 133, 66, 0.2);
+            }
+            
+            .moment-badge {
+                background: linear-gradient(135deg, var(--sanna-green) 0%, var(--sanna-light-green) 100%);
+                color: white;
+                padding: 0.5rem 1.5rem;
+                border-radius: 50px;
+                font-weight: 600;
+                display: inline-block;
+                margin-bottom: 1rem;
+                box-shadow: 0 4px 15px rgba(0, 133, 66, 0.3);
+            }
+            
+            .guion-box {
+                background: linear-gradient(to right, #f0fdf4, #dcfce7);
+                border-left: 4px solid var(--sanna-green);
+                padding: 1.5rem;
+                border-radius: 10px;
+                margin: 1rem 0;
+                font-style: italic;
+            }
+            
+            .action-item {
+                display: flex;
+                align-items: start;
+                padding: 1rem;
+                background: #f9fafb;
+                border-radius: 10px;
+                margin: 0.75rem 0;
+                border: 1px solid #e5e7eb;
+                transition: all 0.2s ease;
+            }
+            
+            .action-item:hover {
+                background: #f0fdf4;
+                border-color: var(--sanna-green);
+            }
+            
+            .icon-circle {
+                width: 40px;
+                height: 40px;
+                background: var(--sanna-green);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.2rem;
+                flex-shrink: 0;
+                margin-right: 1rem;
+                box-shadow: 0 4px 10px rgba(0, 133, 66, 0.3);
+            }
+            
+            .highlight-box {
+                background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+                border: 2px solid #f59e0b;
+                border-radius: 15px;
+                padding: 1.5rem;
+                margin: 2rem 0;
+                box-shadow: 0 5px 20px rgba(245, 158, 11, 0.2);
+            }
+            
+            .important-star {
+                color: #f59e0b;
+                font-size: 1.5rem;
+                margin-right: 0.5rem;
+                animation: pulse 2s infinite;
+            }
+            
+            @keyframes pulse {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0.6; }
+            }
+            
+            .back-btn {
+                background: white;
+                color: var(--sanna-green);
+                padding: 1rem 2rem;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: 600;
+                display: inline-block;
+                border: 2px solid var(--sanna-green);
+                transition: all 0.3s ease;
+            }
+            
+            .back-btn:hover {
+                background: var(--sanna-green);
+                color: white;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 20px rgba(0, 133, 66, 0.3);
+            }
+            
+            @media (max-width: 768px) {
+                .protocol-header {
+                    padding: 1.5rem;
+                }
+                
+                .content-card {
+                    padding: 1.5rem;
+                }
+                
+                .icon-circle {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body class="p-4 md:p-8">
+        <div class="max-w-5xl mx-auto">
+            
+            <!-- Header -->
+            <div class="protocol-header">
+                <div class="flex items-center justify-between flex-wrap gap-4">
+                    <div class="flex items-center">
+                        <span class="bg-white text-green-700 px-4 py-2 rounded-full text-xl font-bold mr-4">#3</span>
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold mb-2">
+                                Derivación y Coordinación
+                            </h1>
+                            <p class="text-green-100 text-lg">
+                                <i class="fas fa-directions mr-2"></i>
+                                Admisionista / Modular
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-sm text-green-100 mb-1">Protocolo</p>
+                        <p class="text-2xl font-bold">Interáreas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tu Misión -->
+            <div class="content-card">
+                <div class="flex items-start">
+                    <div class="icon-circle">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">
+                            Tu Misión
+                        </h2>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Cuando derives a un paciente a otra área o servicio (imagenología, laboratorio, caja, etc.), 
+                            <strong>tu misión es transferir seguridad, no solo información</strong>. 
+                            El paciente debe sentir que <strong>sigue en buenas manos</strong>, que hay un equipo coordinado 
+                            detrás de su atención, y que cada paso está bajo control.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Momento 1 -->
+            <div class="content-card">
+                <span class="moment-badge">
+                    <i class="fas fa-map-signs mr-2"></i>
+                    Momento 1
+                </span>
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    La Derivación Clara y Segura
+                </h3>
+                <p class="text-gray-600 mb-4">
+                    <strong>Cuándo:</strong> Al finalizar tu parte del proceso y derivar al paciente
+                </p>
+
+                <div class="guion-box">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                        Guion:
+                    </p>
+                    <p class="text-gray-700">
+                        "[Nombre], <strong>listo, ya quedó todo en orden</strong>. Ahora lo que sigue es [nombre del área/servicio]. 
+                        Para que todo sea más rápido y cómodo para usted, <strong>le voy a indicar exactamente dónde ir</strong> 
+                        [mostrar o explicar]. Allá mi compañero/a [nombre si es posible] ya está al tanto y lo/la va a atender enseguida."
+                    </p>
+                </div>
+
+                <h4 class="font-bold text-lg mt-6 mb-3" style="color: var(--sanna-dark-green);">
+                    <i class="fas fa-tasks mr-2"></i>
+                    ¿Qué haces mientras hablas?
+                </h4>
+
+                <div class="action-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800 mb-1">Verifica que el sistema esté actualizado</p>
+                        <p class="text-gray-600 text-sm">Confirma que la derivación esté registrada correctamente en el sistema</p>
+                    </div>
+                </div>
+
+                <div class="action-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800 mb-1">Indica con claridad la ubicación</p>
+                        <p class="text-gray-600 text-sm">Señala físicamente o describe el camino de manera precisa</p>
+                    </div>
+                </div>
+
+                <div class="action-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800 mb-1">Realiza la "Llamada de 1 Minuto" (si aplica)</p>
+                        <p class="text-gray-600 text-sm">Contacta al área destino para avisar que el paciente va en camino</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Momento 2 - EL MÁS IMPORTANTE -->
+            <div class="content-card" style="border-left: 5px solid #f59e0b;">
+                <div class="highlight-box mb-4">
+                    <div class="flex items-center mb-2">
+                        <i class="important-star fas fa-star"></i>
+                        <i class="important-star fas fa-star"></i>
+                        <i class="important-star fas fa-star"></i>
+                        <p class="text-xl font-bold" style="color: #f59e0b;">
+                            MOMENTO MÁS IMPORTANTE
+                        </p>
+                    </div>
+                    <p class="text-gray-700 font-semibold">
+                        Este es el punto crítico donde se gana o pierde la confianza del paciente
+                    </p>
+                </div>
+
+                <span class="moment-badge" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                    <i class="fas fa-check-double mr-2"></i>
+                    Momento 2
+                </span>
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    El Cierre de Verificación y Oferta
+                </h3>
+                <p class="text-gray-600 mb-4">
+                    <strong>Cuándo:</strong> Justo antes de que el paciente se vaya a la siguiente área
+                </p>
+
+                <div class="guion-box" style="background: linear-gradient(to right, #fef3c7, #fde68a); border-left-color: #f59e0b;">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: #f59e0b;"></i>
+                        Guion:
+                    </p>
+                    <p class="text-gray-700">
+                        "Antes de que se vaya, <strong>déjeme confirmar que todo quedó claro</strong>: usted va a [área] 
+                        y allá lo/la están esperando. <strong>¿Alguna duda? ¿Hay algo más en lo que pueda ayudarle ahora?</strong>"
+                    </p>
+                </div>
+
+                <h4 class="font-bold text-lg mt-6 mb-3" style="color: var(--sanna-dark-green);">
+                    <i class="fas fa-tasks mr-2"></i>
+                    ¿Qué haces mientras hablas?
+                </h4>
+
+                <div class="action-item">
+                    <div class="icon-circle" style="background: #f59e0b;">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800 mb-1">Pausa activa</p>
+                        <p class="text-gray-600 text-sm">Dale espacio real para que el paciente pregunte o comente algo</p>
+                    </div>
+                </div>
+
+                <div class="action-item">
+                    <div class="icon-circle" style="background: #f59e0b;">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800 mb-1">Observa su expresión</p>
+                        <p class="text-gray-600 text-sm">Detecta confusión o preocupación en su lenguaje corporal</p>
+                    </div>
+                </div>
+
+                <div class="action-item">
+                    <div class="icon-circle" style="background: #f59e0b;">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800 mb-1">Mantén el contacto visual y la sonrisa</p>
+                        <p class="text-gray-600 text-sm">Transmite que sigues disponible y comprometido con su bienestar</p>
+                    </div>
+                </div>
+
+                <div class="bg-orange-50 border-l-4 border-orange-400 p-4 mt-4 rounded-r-lg">
+                    <p class="text-sm text-orange-800">
+                        <i class="fas fa-lightbulb mr-2"></i>
+                        <strong>Por qué es importante:</strong> Este momento final es tu oportunidad de detectar 
+                        dudas ocultas, resolver pequeños malentendidos y dejar al paciente con la sensación de 
+                        <strong>"Estoy en buenas manos"</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Momento 3 -->
+            <div class="content-card">
+                <span class="moment-badge">
+                    <i class="fas fa-phone-volume mr-2"></i>
+                    Momento 3
+                </span>
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    La Coordinación Proactiva: La "Llamada de 1 Minuto"
+                </h3>
+                <p class="text-gray-600 mb-4">
+                    <strong>Cuándo:</strong> Cuando prevés que puede haber demora o confusión en el área destino
+                </p>
+
+                <div class="guion-box">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                        Guion (llamada interna):
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        "Hola [nombre del compañero/a], te aviso que <strong>va para allá el/la paciente [nombre], 
+                        viene derivado/a de [tu área]</strong>. Ya quedó todo registrado. Cualquier cosa me avisas."
+                    </p>
+                    <p class="text-gray-700 text-sm italic mt-2">
+                        (Y luego le dices al paciente: "Listo, ya avisé que va para allá. Todo coordinado.")
+                    </p>
+                </div>
+
+                <h4 class="font-bold text-lg mt-6 mb-3" style="color: var(--sanna-dark-green);">
+                    <i class="fas fa-tasks mr-2"></i>
+                    ¿Qué haces mientras hablas?
+                </h4>
+
+                <div class="action-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800 mb-1">Haces la llamada breve y efectiva</p>
+                        <p class="text-gray-600 text-sm">Máximo 1 minuto: nombre del paciente, origen, y confirmación</p>
+                    </div>
+                </div>
+
+                <div class="action-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800 mb-1">Transmites seguridad al paciente</p>
+                        <p class="text-gray-600 text-sm">Que vea que estás coordinando activamente por su bienestar</p>
+                    </div>
+                </div>
+
+                <div class="action-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800 mb-1">Generas trabajo en equipo visible</p>
+                        <p class="text-gray-600 text-sm">El paciente percibe que hay comunicación entre áreas</p>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 border-l-4 border-green-400 p-4 mt-4 rounded-r-lg">
+                    <p class="text-sm text-green-800">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <strong>Cuándo usar la "Llamada de 1 Minuto":</strong> Pacientes vulnerables (adultos mayores, 
+                        con movilidad reducida), momentos de alta demanda, o cuando detectas que el paciente está 
+                        ansioso o confundido.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recordatorio Clave -->
+            <div class="highlight-box">
+                <h3 class="text-xl font-bold mb-4 flex items-center" style="color: var(--sanna-dark-green);">
+                    <i class="fas fa-exclamation-triangle mr-3" style="color: #f59e0b;"></i>
+                    Recordatorio Clave
+                </h3>
+                <p class="text-gray-800 text-lg leading-relaxed mb-3">
+                    <strong>No se trata solo de "mandar al paciente"</strong>, se trata de <strong>"transferir seguridad"</strong>. 
+                    Cuando el paciente se va sabiendo exactamente a dónde ir, sintiendo que alguien lo espera, 
+                    y percibiendo que hay comunicación entre áreas, <strong>su nivel de ansiedad baja y su 
+                    confianza en SANNA Clínica Belén sube</strong>.
+                </p>
+                <p class="text-gray-700 text-base italic">
+                    Tu rol es <strong>el eslabón de confianza</strong> entre un área y otra. Eres la prueba de que 
+                    en SANNA Clínica Belén <strong>trabajamos como un solo equipo</strong> para el bienestar del paciente.
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-12">
+                <a href="/protocolo3" class="back-btn mr-4 mb-4 inline-block">
+                    <i class="fas fa-arrow-left mr-2"></i> Volver al Protocolo
+                </a>
+                <a href="/" class="back-btn mb-4 inline-block">
+                    <i class="fas fa-home mr-2"></i> Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </body>
+    </html>
+  `)
+})
+
+// Ruta alternativa para Modular (comparte el mismo contenido)
+app.get('/protocolo3-modular', (c) => {
+  return c.redirect('/protocolo3-admisionista')
 })
 
 export default app
