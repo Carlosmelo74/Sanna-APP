@@ -229,6 +229,37 @@ app.get('/', (c) => {
                         </div>
                     </div>
                 </div>
+
+                <!-- Protocolo #5 -->
+                <div class="card-role p-8 mb-6">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                        <div class="flex-1">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-lg font-bold mr-4">#5</span>
+                                <div>
+                                    <h3 class="text-2xl font-bold mb-1" style="color: var(--sanna-green);">
+                                        Proceso de Pago
+                                    </h3>
+                                    <p class="text-gray-600">Cierre administrativo con transparencia total</p>
+                                </div>
+                            </div>
+                            <div class="ml-16 mb-4">
+                                <p class="text-gray-700 mb-2">
+                                    <i class="fas fa-cash-register mr-2" style="color: var(--sanna-green);"></i>
+                                    <strong>Roles:</strong> Admisionista, Modular
+                                </p>
+                                <p class="text-gray-600 text-sm">
+                                    Protocolo para gestionar pagos con transparencia, claridad y manejo de situaciones complejas
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-auto">
+                            <a href="/protocolo5-pago" class="sanna-btn block text-center whitespace-nowrap">
+                                Ver Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Footer -->
@@ -3598,6 +3629,514 @@ app.get('/protocolo4-modular', (c) => {
                     Cuando un paciente ve que te adelantas a informar, te acercas personalmente en momentos difíciles, 
                     y guías proactivamente después de la consulta, <strong>entiende que su tiempo y su experiencia son valiosos</strong>. 
                     No solo gestionas la espera, <strong>gestionas la confianza</strong>.
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-12">
+                <a href="/" class="back-btn">
+                    <i class="fas fa-home mr-2"></i> Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </body>
+    </html>
+  `)
+})
+
+// PROTOCOLO #5: Proceso de Pago - Admisionista/Modular
+app.get('/protocolo5-pago', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protocolo #5 - Proceso de Pago | SANNA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+            
+            :root {
+                --sanna-green: #008542;
+                --sanna-dark-green: #006633;
+                --sanna-light-green: #00a854;
+            }
+            
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            body {
+                background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                min-height: 100vh;
+            }
+            
+            .protocol-header {
+                background: linear-gradient(135deg, var(--sanna-green) 0%, var(--sanna-dark-green) 100%);
+                color: white;
+                padding: 2rem;
+                border-radius: 15px;
+                margin-bottom: 2rem;
+                box-shadow: 0 10px 30px rgba(0, 133, 66, 0.3);
+            }
+            
+            .content-card {
+                background: white;
+                border-radius: 15px;
+                padding: 2rem;
+                margin-bottom: 1.5rem;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                border-left: 5px solid var(--sanna-green);
+                transition: all 0.3s ease;
+            }
+            
+            .content-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 30px rgba(0, 133, 66, 0.2);
+            }
+            
+            .step-badge {
+                background: linear-gradient(135deg, var(--sanna-green) 0%, var(--sanna-light-green) 100%);
+                color: white;
+                padding: 0.5rem 1.5rem;
+                border-radius: 50px;
+                font-weight: 600;
+                display: inline-block;
+                margin-bottom: 1rem;
+                box-shadow: 0 4px 15px rgba(0, 133, 66, 0.3);
+            }
+            
+            .guion-box {
+                background: linear-gradient(to right, #f0fdf4, #dcfce7);
+                border-left: 4px solid var(--sanna-green);
+                padding: 1.5rem;
+                border-radius: 10px;
+                margin: 1rem 0;
+                font-style: italic;
+            }
+            
+            .action-header {
+                background: linear-gradient(to right, #fef3c7, #fde68a);
+                border-left: 4px solid #f59e0b;
+                padding: 1rem 1.5rem;
+                border-radius: 10px;
+                margin: 1rem 0;
+                font-weight: 600;
+            }
+            
+            .situation-card {
+                background: white;
+                border-radius: 12px;
+                padding: 1.5rem;
+                margin: 1rem 0;
+                border: 2px solid #e5e7eb;
+                transition: all 0.3s ease;
+            }
+            
+            .situation-card:hover {
+                border-color: var(--sanna-green);
+                box-shadow: 0 5px 20px rgba(0, 133, 66, 0.15);
+            }
+            
+            .situation-number {
+                background: #dc2626;
+                color: white;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                margin-right: 1rem;
+                flex-shrink: 0;
+            }
+            
+            .icon-circle {
+                width: 40px;
+                height: 40px;
+                background: var(--sanna-green);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.2rem;
+                flex-shrink: 0;
+                margin-right: 1rem;
+                box-shadow: 0 4px 10px rgba(0, 133, 66, 0.3);
+            }
+            
+            .highlight-box {
+                background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+                border: 2px solid #f59e0b;
+                border-radius: 15px;
+                padding: 1.5rem;
+                margin: 2rem 0;
+                box-shadow: 0 5px 20px rgba(245, 158, 11, 0.2);
+            }
+            
+            .back-btn {
+                background: white;
+                color: var(--sanna-green);
+                padding: 1rem 2rem;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: 600;
+                display: inline-block;
+                border: 2px solid var(--sanna-green);
+                transition: all 0.3s ease;
+            }
+            
+            .back-btn:hover {
+                background: var(--sanna-green);
+                color: white;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 20px rgba(0, 133, 66, 0.3);
+            }
+            
+            @media (max-width: 768px) {
+                .protocol-header {
+                    padding: 1.5rem;
+                }
+                
+                .content-card {
+                    padding: 1.5rem;
+                }
+                
+                .icon-circle {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body class="p-4 md:p-8">
+        <div class="max-w-5xl mx-auto">
+            
+            <!-- Header -->
+            <div class="protocol-header">
+                <div class="flex items-center justify-between flex-wrap gap-4">
+                    <div class="flex items-center">
+                        <span class="bg-white text-green-700 px-4 py-2 rounded-full text-xl font-bold mr-4">#5</span>
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold mb-2">
+                                Proceso de Pago
+                            </h1>
+                            <p class="text-green-100 text-lg">
+                                <i class="fas fa-cash-register mr-2"></i>
+                                Admisionista / Modular
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-sm text-green-100 mb-1">Protocolo</p>
+                        <p class="text-2xl font-bold">Cierre Administrativo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tu Misión -->
+            <div class="content-card">
+                <div class="flex items-start">
+                    <div class="icon-circle">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">
+                            Tu Misión
+                        </h2>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Eres el/la <strong>responsable del cierre del ciclo de confianza</strong>. Tu objetivo es que 
+                            <strong>el último paso administrativo sea una experiencia de total transparencia, seguridad y calidez</strong>, 
+                            asegurando que el paciente se vaya de SANNA Clínica Belén con la certeza de que 
+                            <strong>todo ha sido correcto y profesional</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Título Sección -->
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-bold mb-2" style="color: var(--sanna-green);">
+                    <i class="fas fa-route mr-3"></i>
+                    El Flujo de un Cierre Administrativo Excelente
+                </h2>
+                <p class="text-gray-600">Sigue estos 3 pasos para garantizar una experiencia transparente y profesional</p>
+            </div>
+
+            <!-- Paso 1: Explicación Transparente -->
+            <div class="content-card">
+                <span class="step-badge">
+                    <i class="fas fa-comment-dots mr-2"></i>
+                    Paso 1
+                </span>
+                
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    La Explicación Transparente (El Paso Clave)
+                </h3>
+
+                <div class="action-header">
+                    <i class="fas fa-hand-point-right mr-2" style="color: #f59e0b;"></i>
+                    ACCIÓN: Antes de cobrar, haz contacto visual y explica claramente el monto y el concepto.
+                </div>
+
+                <div class="guion-box">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                        Guion:
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        "Perfecto, Sr./Sra. [Apellido]. <strong>El monto total es de S/ [Monto]</strong>. Le explico brevemente: 
+                        esto corresponde a <strong>[concepto claro, ej: 'el copago de su consulta']</strong>.
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        <strong>¿Esta información le resulta clara?</strong>
+                    </p>
+                    <p class="text-gray-700">
+                        ¿Desea <strong>boleta o factura</strong>? [Si factura:] Brindeme su número de RUC, por favor."
+                    </p>
+                </div>
+
+                <div class="bg-green-50 border-l-4 border-green-400 p-4 mt-4 rounded-r-lg">
+                    <p class="text-sm text-green-800">
+                        <i class="fas fa-lightbulb mr-2"></i>
+                        <strong>Por qué es el paso clave:</strong> La transparencia previa evita sorpresas desagradables. 
+                        Cuando explicas antes de cobrar, demuestras que no hay nada oculto y reduces drásticamente 
+                        las objeciones o malentendidos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Paso 2: Entrega y Confirmación -->
+            <div class="content-card">
+                <span class="step-badge">
+                    <i class="fas fa-receipt mr-2"></i>
+                    Paso 2
+                </span>
+                
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    La Entrega y Confirmación
+                </h3>
+
+                <div class="action-header">
+                    <i class="fas fa-hand-point-right mr-2" style="color: #f59e0b;"></i>
+                    ACCIÓN: Entrega el comprobante de forma ordenada y confirma verbalmente el cobro que vas a realizar.
+                </div>
+
+                <div class="guion-box">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                        Guion:
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        "Aquí tiene su comprobante. El monto es de <strong>S/ [xxx]</strong>.
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        Cancela con <strong>¿Tarjeta o efectivo?</strong>
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        [Si efectivo:] Perfecto, le recibo <strong>S/ [xxx]</strong> y le regreso <strong>S/ [xxx]</strong>.
+                    </p>
+                    <p class="text-gray-700">
+                        Con esto, <strong>su proceso en SANNA Clínica Belén ha finalizado por hoy</strong>. 
+                        ¿Hay algo más en lo que pueda ayudarle?"
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mt-4 rounded-r-lg">
+                    <p class="text-sm text-blue-800">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <strong>Detalles importantes:</strong> Confirmar verbalmente los montos que recibes y devuelves 
+                        elimina cualquier confusión y demuestra profesionalismo. La pregunta final "¿Hay algo más...?" 
+                        muestra disponibilidad hasta el último momento.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Paso 3: Cierre Emocional -->
+            <div class="content-card">
+                <span class="step-badge">
+                    <i class="fas fa-heart mr-2"></i>
+                    Paso 3
+                </span>
+                
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    El Cierre Emocional (La Última Impresión)
+                </h3>
+
+                <div class="action-header">
+                    <i class="fas fa-hand-point-right mr-2" style="color: #f59e0b;"></i>
+                    ACCIÓN: Despídete con calidez, agradeciendo la confianza del paciente.
+                </div>
+
+                <div class="guion-box">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                        Guion:
+                    </p>
+                    <p class="text-gray-700">
+                        "¡Perfecto! <strong>Gracias por elegirnos para cuidar de su salud</strong>. Que tenga un gran día."
+                    </p>
+                </div>
+
+                <div class="bg-purple-50 border-l-4 border-purple-400 p-4 mt-4 rounded-r-lg">
+                    <p class="text-sm text-purple-800">
+                        <i class="fas fa-smile mr-2"></i>
+                        <strong>El poder del cierre cálido:</strong> Este es el último recuerdo que el paciente se lleva 
+                        de su visita. Una despedida genuina y agradecida deja una impresión positiva que supera cualquier 
+                        inconveniente previo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Situaciones Complejas -->
+            <div class="content-card" style="border-left-color: #dc2626;">
+                <h2 class="text-3xl font-bold mb-4 flex items-center" style="color: #dc2626;">
+                    <i class="fas fa-exclamation-circle mr-3"></i>
+                    Situaciones Complejas
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    Manejo profesional de situaciones difíciles que pueden surgir durante el proceso de pago
+                </p>
+
+                <!-- Situación 1 -->
+                <div class="situation-card">
+                    <div class="flex items-start mb-4">
+                        <div class="situation-number">1</div>
+                        <h4 class="text-xl font-bold text-gray-800">
+                            Paciente no entiende el cobro o le parece muy alto
+                        </h4>
+                    </div>
+                    
+                    <div class="action-header">
+                        <i class="fas fa-hand-point-right mr-2" style="color: #f59e0b;"></i>
+                        ACCIÓN: Mantén la calma. Valida su emoción. Conviértete en su aliado para darle claridad.
+                    </div>
+
+                    <div class="guion-box">
+                        <p class="text-gray-800 font-semibold mb-2">
+                            <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                            Guion:
+                        </p>
+                        <p class="text-gray-700">
+                            "Comprendo perfectamente su duda. <strong>Mi objetivo es que usted tenga total transparencia</strong>. 
+                            Permítame desglosarle los conceptos punto por punto para que no se vaya con ninguna inquietud."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Situación 2 -->
+                <div class="situation-card">
+                    <div class="flex items-start mb-4">
+                        <div class="situation-number">2</div>
+                        <h4 class="text-xl font-bold text-gray-800">
+                            El seguro del paciente tiene una inconsistencia
+                        </h4>
+                    </div>
+                    
+                    <div class="action-header">
+                        <i class="fas fa-hand-point-right mr-2" style="color: #f59e0b;"></i>
+                        ACCIÓN: Comunica el problema con un tono de solución, no de bloqueo.
+                    </div>
+
+                    <div class="guion-box">
+                        <p class="text-gray-800 font-semibold mb-2">
+                            <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                            Guion:
+                        </p>
+                        <p class="text-gray-700">
+                            "He verificado una inconsistencia con su seguro. <strong>Pero no se preocupe, estoy aquí para ayudarle</strong> 
+                            a validarlo. Lo que haré ahora es <strong>llamar directamente a la aseguradora</strong>. 
+                            Le pido unos minutos mientras lo gestiono por usted."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Situación 3 -->
+                <div class="situation-card">
+                    <div class="flex items-start mb-4">
+                        <div class="situation-number">3</div>
+                        <h4 class="text-xl font-bold text-gray-800">
+                            Falla en el sistema (POS lento, sistema caído)
+                        </h4>
+                    </div>
+                    
+                    <div class="action-header">
+                        <i class="fas fa-hand-point-right mr-2" style="color: #f59e0b;"></i>
+                        ACCIÓN: Sé proactivo y transparente. Informa antes de que el paciente se impaciente.
+                    </div>
+
+                    <div class="guion-box">
+                        <p class="text-gray-800 font-semibold mb-2">
+                            <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                            Guion:
+                        </p>
+                        <p class="text-gray-700">
+                            "Le informo con total transparencia que <strong>nuestro sistema está presentando una intermitencia</strong>. 
+                            Le ofrezco disculpas por esta demora. Ya lo estamos solucionando. 
+                            <strong>Agradezco enormemente su paciencia</strong>."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Situación 4 -->
+                <div class="situation-card">
+                    <div class="flex items-start mb-4">
+                        <div class="situation-number">4</div>
+                        <h4 class="text-xl font-bold text-gray-800">
+                            Paciente visiblemente molesto o alterado por un cobro
+                        </h4>
+                    </div>
+                    
+                    <div class="action-header">
+                        <i class="fas fa-hand-point-right mr-2" style="color: #f59e0b;"></i>
+                        ACCIÓN: Activa el protocolo de contención. Escucha y escala si es necesario.
+                    </div>
+
+                    <div class="guion-box">
+                        <p class="text-gray-800 font-semibold mb-2">
+                            <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                            Guion:
+                        </p>
+                        <p class="text-gray-700 mb-3">
+                            "Comprendo su molestia y lamento la confusión. <strong>Mi prioridad es ayudarle</strong>.
+                        </p>
+                        <p class="text-gray-700">
+                            [Si no puedes resolverlo:] Para darle una solución definitiva, voy a comunicarme 
+                            <strong>inmediatamente con mi coordinadora, [Nombre]</strong>, quien lo atenderá personalmente. 
+                            Yo me encargo de que lo atiendan ahora mismo."
+                        </p>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-400 p-4 mt-4 rounded-r-lg">
+                        <p class="text-sm text-red-800">
+                            <i class="fas fa-shield-alt mr-2"></i>
+                            <strong>Protocolo de escalación:</strong> Cuando la situación supera tu capacidad de resolución, 
+                            escalar rápidamente no es debilidad, es profesionalismo. Asegura al paciente que su caso 
+                            será atendido por alguien con mayor autoridad para resolver.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recordatorio Clave -->
+            <div class="highlight-box">
+                <h3 class="text-xl font-bold mb-4 flex items-center" style="color: var(--sanna-dark-green);">
+                    <i class="fas fa-exclamation-triangle mr-3" style="color: #f59e0b;"></i>
+                    Recordatorio Clave
+                </h3>
+                <p class="text-gray-800 text-lg leading-relaxed mb-3">
+                    Tu rol es ser <strong>la garantía de la transparencia</strong>. Cada explicación clara que das 
+                    <strong>construye la confianza del paciente en SANNA Clínica Belén</strong>.
+                </p>
+                <p class="text-gray-700 text-base italic">
+                    El proceso de pago no es "solo cobrar", es <strong>el último momento donde demuestras que el paciente 
+                    tomó la decisión correcta al elegir SANNA</strong>. Cuando el paciente se va con claridad, respeto 
+                    y calidez en el cierre administrativo, <strong>se convierte en un embajador natural de nuestra clínica</strong>.
                 </p>
             </div>
 
