@@ -31,28 +31,35 @@ Transformar la incertidumbre del paciente en calma y seguridad desde el primer c
 ## ✨ Características Principales
 
 - ✅ **Diseño Responsive**: Optimizado para dispositivos móviles
-- ✅ **Navegación Intuitiva**: Cada rol accede fácilmente a sus protocolos
+- ✅ **Navegación Intuitiva**: Sistema de 2 pasos (Protocolo → Rol)
 - ✅ **Paleta de Colores Corporativa**: Verde SANNA (#008542)
 - ✅ **Guiones Prácticos**: Qué decir en cada situación
 - ✅ **Acciones Claras**: Qué hacer paso a paso
 - ✅ **Visual Atractivo**: Iconos, colores y tipografía moderna
+- ✅ **Escalable**: Estructura lista para 5-6+ protocolos
 
 ## 🚀 URLs de Acceso
 
 ### **Producción (LIVE) ✨**
 - **🌐 URL Principal**: https://sanna-protocolos.pages.dev
-- **👋 Anfitriona**: https://sanna-protocolos.pages.dev/anfitriona
-- **📋 Admisionista**: https://sanna-protocolos.pages.dev/admisionista
-- **⏰ Modular**: https://sanna-protocolos.pages.dev/modular
 
-### **Desarrollo (Sandbox)**
-- **URL Principal**: https://3000-iogqy0sv3fencwh0q1egt-0e616f0a.sandbox.novita.ai
-- **Anfitriona**: https://3000-iogqy0sv3fencwh0q1egt-0e616f0a.sandbox.novita.ai/anfitriona
-- **Admisionista**: https://3000-iogqy0sv3fencwh0q1egt-0e616f0a.sandbox.novita.ai/admisionista
-- **Modular**: https://3000-iogqy0sv3fencwh0q1egt-0e616f0a.sandbox.novita.ai/modular
+### **Protocolo #1: Primera Impresión y Orientación**
+- **Página del Protocolo**: https://sanna-protocolos.pages.dev/protocolo1
+- **Anfitriona Torre SANNA**: https://sanna-protocolos.pages.dev/anfitriona
+- **Anfitriona Torre Belén**: https://sanna-protocolos.pages.dev/anfitriona-belen
+
+### **Protocolo #2: Registro y Seguridad Administrativa**
+- **Página del Protocolo**: https://sanna-protocolos.pages.dev/protocolo2
+- **Admisionista**: https://sanna-protocolos.pages.dev/admisionista
+- **Modular**: https://sanna-protocolos.pages.dev/modular
+
+### **Protocolo #3: Derivación y Coordinación** 🆕
+- **Página del Protocolo**: https://sanna-protocolos.pages.dev/protocolo3
+- **Anfitriona**: https://sanna-protocolos.pages.dev/protocolo3-anfitriona
+- **Admisionista/Modular**: https://sanna-protocolos.pages.dev/protocolo3-admisionista
 
 ### **Deployment Actual**
-- **Último Deploy**: https://c83bbec9.sanna-protocolos.pages.dev
+- **Último Deploy**: https://f7ef477b.sanna-protocolos.pages.dev
 - **Proyecto Cloudflare**: sanna-protocolos
 - **Estado**: ✅ Activo y funcionando
 
@@ -105,17 +112,31 @@ Esta app sirve para:
 
 ## 📊 Funcionalidades Completadas
 
-- ✅ Página principal con selector de roles
-- ✅ Protocolo completo de Anfitriona
-- ✅ Protocolo completo de Admisionista
-- ✅ Protocolo completo de Modular (Torre Belén)
+### Estructura de Navegación
+- ✅ Página principal con tarjetas de protocolos
+- ✅ Sistema de navegación de 2 pasos (Protocolo → Rol)
 - ✅ Diseño responsive mobile-first
-- ✅ Navegación intuitiva
 - ✅ Identidad visual corporativa SANNA
+
+### Protocolos Implementados
+
+#### **Protocolo #1: Primera Impresión y Orientación**
+- ✅ Anfitriona Torre SANNA (recepción proactiva)
+- ✅ Anfitriona Torre Belén (orientación y acompañamiento)
+
+#### **Protocolo #2: Registro y Seguridad Administrativa**
+- ✅ Admisionista (registro ágil y empático)
+- ✅ Modular (gestión de consultas y demoras)
+
+#### **Protocolo #3: Derivación y Coordinación** 🆕
+- ✅ Anfitriona (acompañamiento de pacientes vulnerables)
+- ✅ Admisionista/Modular (derivación segura y coordinación)
+- ✅ 3 momentos clave con énfasis en "Cierre de Verificación"
+- ✅ Sistema de "Llamada de 1 Minuto" para coordinación proactiva
 
 ## 🔜 Próximos Pasos Recomendados
 
-1. **Deployment a Cloudflare Pages** para acceso público permanente
+1. **Agregar Protocolos #4 y #5** siguiendo la estructura establecida
 2. **Testing con usuarios reales** del personal SANNA
 3. **Agregar módulo de evaluación** (quiz de conocimientos)
 4. **Sistema de búsqueda** de guiones específicos
