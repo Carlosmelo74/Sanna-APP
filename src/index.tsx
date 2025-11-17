@@ -79,7 +79,7 @@ app.get('/', (c) => {
             .header-logo {
                 position: fixed;
                 top: 20px;
-                left: 20px;
+                right: 20px;
                 z-index: 1000;
                 background: white;
                 border-radius: 16px;
@@ -94,18 +94,19 @@ app.get('/', (c) => {
             }
             
             .header-logo img {
-                height: 50px;
+                height: 60px;
                 width: auto;
+                display: block;
             }
             
             @media (max-width: 768px) {
                 .header-logo {
                     top: 15px;
-                    left: 15px;
+                    right: 15px;
                     padding: 8px 12px;
                 }
                 .header-logo img {
-                    height: 40px;
+                    height: 45px;
                 }
             }
         </style>
@@ -291,7 +292,7 @@ app.get('/anfitriona', (c) => {
             .header-logo {
                 position: fixed;
                 top: 20px;
-                left: 20px;
+                right: 20px;
                 z-index: 1000;
                 background: white;
                 border-radius: 16px;
@@ -306,18 +307,19 @@ app.get('/anfitriona', (c) => {
             }
             
             .header-logo img {
-                height: 50px;
+                height: 60px;
                 width: auto;
+                display: block;
             }
             
             @media (max-width: 768px) {
                 .header-logo {
                     top: 15px;
-                    left: 15px;
+                    right: 15px;
                     padding: 8px 12px;
                 }
                 .header-logo img {
-                    height: 40px;
+                    height: 45px;
                 }
             }
         </style>
@@ -639,7 +641,7 @@ app.get('/admisionista', (c) => {
             .header-logo {
                 position: fixed;
                 top: 20px;
-                left: 20px;
+                right: 20px;
                 z-index: 1000;
                 background: white;
                 border-radius: 16px;
@@ -654,18 +656,19 @@ app.get('/admisionista', (c) => {
             }
             
             .header-logo img {
-                height: 50px;
+                height: 60px;
                 width: auto;
+                display: block;
             }
             
             @media (max-width: 768px) {
                 .header-logo {
                     top: 15px;
-                    left: 15px;
+                    right: 15px;
                     padding: 8px 12px;
                 }
                 .header-logo img {
-                    height: 40px;
+                    height: 45px;
                 }
             }
         </style>
@@ -919,7 +922,7 @@ app.get('/modular', (c) => {
             .header-logo {
                 position: fixed;
                 top: 20px;
-                left: 20px;
+                right: 20px;
                 z-index: 1000;
                 background: white;
                 border-radius: 16px;
@@ -934,18 +937,19 @@ app.get('/modular', (c) => {
             }
             
             .header-logo img {
-                height: 50px;
+                height: 60px;
                 width: auto;
+                display: block;
             }
             
             @media (max-width: 768px) {
                 .header-logo {
                     top: 15px;
-                    left: 15px;
+                    right: 15px;
                     padding: 8px 12px;
                 }
                 .header-logo img {
-                    height: 40px;
+                    height: 45px;
                 }
             }
         </style>
