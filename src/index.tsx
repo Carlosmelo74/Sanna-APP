@@ -260,6 +260,38 @@ app.get('/', (c) => {
                         </div>
                     </div>
                 </div>
+
+                <!-- Protocolo #6 -->
+                <div class="card-role p-8 mb-6" style="background: linear-gradient(135deg, #fff9e6 0%, #ffe6e6 100%); border: 3px solid #f59e0b;">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                        <div class="flex-1">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-lg font-bold mr-4 shadow-lg">#6</span>
+                                <div>
+                                    <h3 class="text-2xl font-bold mb-1" style="color: var(--sanna-green);">
+                                        Despedida
+                                        <span class="ml-2 text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">CIERRE FINAL</span>
+                                    </h3>
+                                    <p class="text-gray-600">El último recuerdo que se lleva el paciente</p>
+                                </div>
+                            </div>
+                            <div class="ml-16 mb-4">
+                                <p class="text-gray-700 mb-2">
+                                    <i class="fas fa-handshake mr-2" style="color: var(--sanna-green);"></i>
+                                    <strong>Responsabilidad Compartida:</strong> Anfitriona, Admisionista, Modular
+                                </p>
+                                <p class="text-gray-600 text-sm">
+                                    <strong>⭐ Protocolo especial:</strong> El colaborador con último contacto ejecuta el cierre emocional memorable
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-auto">
+                            <a href="/protocolo6-despedida" class="sanna-btn block text-center whitespace-nowrap" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); border-color: #d97706;">
+                                Ver Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Footer -->
@@ -4137,6 +4169,610 @@ app.get('/protocolo5-pago', (c) => {
                     El proceso de pago no es "solo cobrar", es <strong>el último momento donde demuestras que el paciente 
                     tomó la decisión correcta al elegir SANNA</strong>. Cuando el paciente se va con claridad, respeto 
                     y calidez en el cierre administrativo, <strong>se convierte en un embajador natural de nuestra clínica</strong>.
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-12">
+                <a href="/" class="back-btn">
+                    <i class="fas fa-home mr-2"></i> Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </body>
+    </html>
+  `)
+})
+
+// PROTOCOLO #6: Despedida - Responsabilidad Compartida (Anfitriona/Admisionista/Modular)
+app.get('/protocolo6-despedida', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protocolo #6 - Despedida | SANNA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+            
+            :root {
+                --sanna-green: #008542;
+                --sanna-dark-green: #006633;
+                --sanna-light-green: #00a854;
+                --farewell-orange: #f59e0b;
+                --farewell-red: #dc2626;
+            }
+            
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            body {
+                background: linear-gradient(135deg, #fff9e6 0%, #ffe6e6 50%, #f0fdf4 100%);
+                min-height: 100vh;
+            }
+            
+            .protocol-header {
+                background: linear-gradient(135deg, var(--farewell-orange) 0%, var(--farewell-red) 50%, var(--sanna-green) 100%);
+                color: white;
+                padding: 2rem;
+                border-radius: 15px;
+                margin-bottom: 2rem;
+                box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .protocol-header::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                right: -50%;
+                width: 200%;
+                height: 200%;
+                background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+                animation: shimmer 3s infinite;
+            }
+            
+            @keyframes shimmer {
+                0%, 100% { transform: translate(0, 0); }
+                50% { transform: translate(-20px, -20px); }
+            }
+            
+            .special-badge {
+                background: white;
+                color: var(--farewell-orange);
+                padding: 0.5rem 1rem;
+                border-radius: 50px;
+                font-weight: 700;
+                display: inline-block;
+                box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+                animation: pulse 2s infinite;
+            }
+            
+            @keyframes pulse {
+                0%, 100% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+            }
+            
+            .content-card {
+                background: white;
+                border-radius: 15px;
+                padding: 2rem;
+                margin-bottom: 1.5rem;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                border-left: 5px solid var(--sanna-green);
+                transition: all 0.3s ease;
+            }
+            
+            .content-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 30px rgba(0, 133, 66, 0.2);
+            }
+            
+            .technique-badge {
+                background: linear-gradient(135deg, var(--sanna-green) 0%, var(--sanna-light-green) 100%);
+                color: white;
+                padding: 0.5rem 1.5rem;
+                border-radius: 50px;
+                font-weight: 600;
+                display: inline-block;
+                margin-bottom: 1rem;
+                box-shadow: 0 4px 15px rgba(0, 133, 66, 0.3);
+            }
+            
+            .shared-responsibility-box {
+                background: linear-gradient(to right, #fef3c7, #fed7aa);
+                border: 3px solid var(--farewell-orange);
+                border-radius: 15px;
+                padding: 2rem;
+                margin: 2rem 0;
+                box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+            }
+            
+            .team-icon {
+                width: 60px;
+                height: 60px;
+                background: var(--farewell-orange);
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.8rem;
+                margin: 0 0.5rem;
+                box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+            }
+            
+            .guion-box {
+                background: linear-gradient(to right, #f0fdf4, #dcfce7);
+                border-left: 4px solid var(--sanna-green);
+                padding: 1.5rem;
+                border-radius: 10px;
+                margin: 1rem 0;
+                font-style: italic;
+            }
+            
+            .action-header {
+                background: linear-gradient(to right, #fef3c7, #fde68a);
+                border-left: 4px solid var(--farewell-orange);
+                padding: 1rem 1.5rem;
+                border-radius: 10px;
+                margin: 1rem 0;
+                font-weight: 600;
+            }
+            
+            .situation-card {
+                background: white;
+                border-radius: 12px;
+                padding: 1.5rem;
+                margin: 1rem 0;
+                border: 2px solid #e5e7eb;
+                transition: all 0.3s ease;
+            }
+            
+            .situation-card:hover {
+                border-color: var(--farewell-orange);
+                box-shadow: 0 5px 20px rgba(245, 158, 11, 0.2);
+            }
+            
+            .situation-number {
+                background: var(--farewell-orange);
+                color: white;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                margin-right: 1rem;
+                flex-shrink: 0;
+            }
+            
+            .icon-circle {
+                width: 40px;
+                height: 40px;
+                background: var(--sanna-green);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.2rem;
+                flex-shrink: 0;
+                margin-right: 1rem;
+                box-shadow: 0 4px 10px rgba(0, 133, 66, 0.3);
+            }
+            
+            .highlight-box {
+                background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+                border: 2px solid var(--farewell-orange);
+                border-radius: 15px;
+                padding: 1.5rem;
+                margin: 2rem 0;
+                box-shadow: 0 5px 20px rgba(245, 158, 11, 0.2);
+            }
+            
+            .final-message-box {
+                background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+                border: 3px solid var(--sanna-green);
+                border-radius: 15px;
+                padding: 2rem;
+                margin: 2rem 0;
+                text-align: center;
+                box-shadow: 0 8px 30px rgba(0, 133, 66, 0.3);
+            }
+            
+            .back-btn {
+                background: white;
+                color: var(--sanna-green);
+                padding: 1rem 2rem;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: 600;
+                display: inline-block;
+                border: 2px solid var(--sanna-green);
+                transition: all 0.3s ease;
+            }
+            
+            .back-btn:hover {
+                background: var(--sanna-green);
+                color: white;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 20px rgba(0, 133, 66, 0.3);
+            }
+            
+            @media (max-width: 768px) {
+                .protocol-header {
+                    padding: 1.5rem;
+                }
+                
+                .content-card {
+                    padding: 1.5rem;
+                }
+                
+                .icon-circle {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 1rem;
+                }
+                
+                .team-icon {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 1.5rem;
+                }
+            }
+        </style>
+    </head>
+    <body class="p-4 md:p-8">
+        <div class="max-w-5xl mx-auto">
+            
+            <!-- Header -->
+            <div class="protocol-header">
+                <div class="flex items-center justify-between flex-wrap gap-4" style="position: relative; z-index: 1;">
+                    <div class="flex items-center">
+                        <span class="bg-white text-orange-700 px-4 py-2 rounded-full text-xl font-bold mr-4 shadow-lg">#6</span>
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold mb-2">
+                                Despedida
+                            </h1>
+                            <p class="text-orange-100 text-lg">
+                                <i class="fas fa-handshake mr-2"></i>
+                                Anfitriona / Admisionista / Modular
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p class="special-badge">
+                            <i class="fas fa-star mr-2"></i>
+                            CIERRE FINAL
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tu Misión -->
+            <div class="content-card">
+                <div class="flex items-start">
+                    <div class="icon-circle">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">
+                            Tu Misión
+                        </h2>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Eres el/la <strong>responsable del último recuerdo que el paciente se lleva de SANNA Clínica Belén</strong>. 
+                            Tu objetivo es realizar un <strong>"cierre emocional" memorable</strong>, validando que no queden dudas 
+                            y reforzando la confianza del paciente, asegurando que <strong>se vaya sintiéndose valorado hasta 
+                            el último segundo</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Triángulo de Despedida -->
+            <div class="shared-responsibility-box">
+                <h2 class="text-2xl font-bold mb-4 text-center" style="color: var(--farewell-orange);">
+                    <i class="fas fa-users mr-3"></i>
+                    El "Triángulo de Despedida": Tu Responsabilidad Compartida
+                </h2>
+                
+                <div class="text-center mb-4">
+                    <div class="team-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <div class="team-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="team-icon">
+                        <i class="fas fa-user-clock"></i>
+                    </div>
+                </div>
+                
+                <p class="text-gray-800 text-center text-lg leading-relaxed mb-3">
+                    <strong>Recuerda:</strong> El colaborador que tiene el <strong>último contacto humano significativo</strong> 
+                    con el paciente es el <strong>responsable de ejecutar este protocolo</strong>.
+                </p>
+                
+                <div class="bg-white rounded-lg p-4 text-center">
+                    <p class="text-gray-700 font-semibold text-lg">
+                        <i class="fas fa-heart mr-2" style="color: var(--farewell-red);"></i>
+                        ¡Somos un solo equipo para asegurar que nadie se vaya sin una despedida cálida!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Título Sección -->
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-bold mb-2" style="color: var(--sanna-green);">
+                    <i class="fas fa-magic mr-3"></i>
+                    Técnicas para un Cierre Emocional Excelente
+                </h2>
+                <p class="text-gray-600">Estos 3 pasos garantizan que el paciente se vaya con una impresión memorable</p>
+            </div>
+
+            <!-- Técnica 1: Verificación de Tranquilidad -->
+            <div class="content-card">
+                <span class="technique-badge">
+                    <i class="fas fa-check-circle mr-2"></i>
+                    Técnica 1
+                </span>
+                
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    La Verificación de Tranquilidad
+                </h3>
+                <p class="text-gray-600 mb-4 italic">
+                    Para disipar dudas finales
+                </p>
+
+                <div class="action-header">
+                    <i class="fas fa-hand-point-right mr-2" style="color: var(--farewell-orange);"></i>
+                    ACCIÓN: Antes de la despedida final, haz una pausa, mira al paciente y pregunta activamente si todo está en orden.
+                </div>
+
+                <div class="guion-box">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                        Guion:
+                    </p>
+                    <p class="text-gray-700">
+                        "Antes de despedirnos, solo quiero confirmar, <strong>¿quedó todo claro con sus indicaciones y su proceso?</strong> 
+                        Mi objetivo es que <strong>se vaya con total tranquilidad</strong>."
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mt-4 rounded-r-lg">
+                    <p class="text-sm text-blue-800">
+                        <i class="fas fa-lightbulb mr-2"></i>
+                        <strong>Por qué funciona:</strong> Esta pregunta abierta da permiso al paciente para expresar 
+                        cualquier duda de último momento que podría haberse guardado. Demuestra que realmente te importa 
+                        su comprensión total del proceso.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Técnica 2: Despedida Personalizada -->
+            <div class="content-card">
+                <span class="technique-badge">
+                    <i class="fas fa-user-check mr-2"></i>
+                    Técnica 2
+                </span>
+                
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    La Despedida Personalizada
+                </h3>
+                <p class="text-gray-600 mb-4 italic">
+                    Agradecimiento genuino
+                </p>
+
+                <div class="action-header">
+                    <i class="fas fa-hand-point-right mr-2" style="color: var(--farewell-orange);"></i>
+                    ACCIÓN: Usa el apellido del paciente si es posible. Haz contacto visual y sonríe. Tu tono debe ser sincero.
+                </div>
+
+                <div class="guion-box">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                        Guion:
+                    </p>
+                    <p class="text-gray-700">
+                        "Sr./Sra. [Apellido], <strong>muchas gracias por haber confiado hoy en SANNA Clínica Belén</strong>. 
+                        Ha sido un gusto atenderle. Le deseamos una <strong>pronta recuperación</strong> y un excelente día."
+                    </p>
+                </div>
+
+                <div class="bg-purple-50 border-l-4 border-purple-400 p-4 mt-4 rounded-r-lg">
+                    <p class="text-sm text-purple-800">
+                        <i class="fas fa-smile mr-2"></i>
+                        <strong>El poder de la personalización:</strong> Usar el apellido del paciente hace que la despedida 
+                        sea personal, no genérica. El contacto visual y la sonrisa genuina refuerzan que el agradecimiento 
+                        es auténtico, no un script automático.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Técnica 3: Cierre Emocional -->
+            <div class="content-card">
+                <span class="technique-badge">
+                    <i class="fas fa-heart mr-2"></i>
+                    Técnica 3
+                </span>
+                
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    El Cierre Emocional
+                </h3>
+                <p class="text-gray-600 mb-4 italic">
+                    Reforzando el Sello SANNA
+                </p>
+
+                <div class="action-header">
+                    <i class="fas fa-hand-point-right mr-2" style="color: var(--farewell-orange);"></i>
+                    ACCIÓN: Especialmente con pacientes que tuvieron una visita sensible, ofrece una dosis extra de humanidad.
+                </div>
+
+                <div class="guion-box">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                        Guion:
+                    </p>
+                    <p class="text-gray-700">
+                        "<strong>Sabemos que los días de clínica no siempre son fáciles</strong>, pero quiero que sepa que 
+                        <strong>aquí siempre encontrará un equipo dispuesto a cuidarle</strong>. Le deseamos mucha calma y salud. 
+                        Hasta pronto."
+                    </p>
+                </div>
+
+                <div class="bg-green-50 border-l-4 border-green-400 p-4 mt-4 rounded-r-lg">
+                    <p class="text-sm text-green-800">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <strong>Cuándo usar esta técnica:</strong> Ideal para pacientes que notaste nerviosos, con diagnósticos 
+                        complejos, adultos mayores solos, o cualquier situación donde percibiste vulnerabilidad emocional. 
+                        Esta humanidad extra puede marcar una diferencia enorme.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Situaciones Diversas -->
+            <div class="content-card" style="border-left-color: var(--farewell-orange);">
+                <h2 class="text-3xl font-bold mb-4 flex items-center" style="color: var(--farewell-orange);">
+                    <i class="fas fa-route mr-3"></i>
+                    Situaciones Diversas al Final
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    Guías de acción para diferentes escenarios de despedida
+                </p>
+
+                <!-- Situación 1 -->
+                <div class="situation-card">
+                    <div class="flex items-start mb-4">
+                        <div class="situation-number">1</div>
+                        <h4 class="text-xl font-bold text-gray-800">
+                            Paciente sale con cara de duda o mirando los carteles
+                        </h4>
+                    </div>
+                    
+                    <div class="action-header">
+                        <i class="fas fa-hand-point-right mr-2" style="color: var(--farewell-orange);"></i>
+                        ACCIÓN: Activa tu "Radar de Ayuda". Acércate proactivamente.
+                    </div>
+
+                    <div class="guion-box">
+                        <p class="text-gray-800 font-semibold mb-2">
+                            <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                            Guion:
+                        </p>
+                        <p class="text-gray-700">
+                            "Buenas tardes, Sr./Sra. [Apellido]. <strong>Noto que quizás tiene una última duda</strong>. 
+                            ¿Hay algo en lo que pueda ayudarle para que se vaya con <strong>total seguridad</strong>?"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Situación 2 -->
+                <div class="situation-card">
+                    <div class="flex items-start mb-4">
+                        <div class="situation-number">2</div>
+                        <h4 class="text-xl font-bold text-gray-800">
+                            Paciente sale apurado o estresado
+                        </h4>
+                    </div>
+                    
+                    <div class="action-header">
+                        <i class="fas fa-hand-point-right mr-2" style="color: var(--farewell-orange);"></i>
+                        ACCIÓN: No lo detengas, pero no dejes que se vaya sin un gesto. Haz contacto visual y usa una despedida corta y cálida.
+                    </div>
+
+                    <div class="guion-box">
+                        <p class="text-gray-800 font-semibold mb-2">
+                            <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                            Guion:
+                        </p>
+                        <p class="text-gray-700">
+                            "¡Que tenga un excelente día, Sr./Sra. [Apellido]! <strong>Gracias por su visita</strong>."
+                        </p>
+                    </div>
+
+                    <div class="bg-orange-50 border-l-4 border-orange-400 p-4 mt-4 rounded-r-lg">
+                        <p class="text-sm text-orange-800">
+                            <i class="fas fa-bolt mr-2"></i>
+                            <strong>Respeto por su tiempo:</strong> Cuando detectas prisa, no alargues la despedida. 
+                            Un gesto breve pero cálido muestra que respetas su urgencia sin dejar de ser humano.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Situación 3 -->
+                <div class="situation-card">
+                    <div class="flex items-start mb-4">
+                        <div class="situation-number">3</div>
+                        <h4 class="text-xl font-bold text-gray-800">
+                            La Anfitriona está ocupada con un paciente que ingresa
+                        </h4>
+                    </div>
+                    
+                    <div class="action-header">
+                        <i class="fas fa-hand-point-right mr-2" style="color: var(--farewell-orange);"></i>
+                        ACCIÓN: El Admisionista o Modular que tuvo el último contacto (ej. en caja) asume la responsabilidad 100% 
+                        de la despedida completa, haciendo contacto visual y haciendo un gesto con sus manos de despedida.
+                    </div>
+
+                    <div class="guion-box">
+                        <p class="text-gray-800 font-semibold mb-2">
+                            <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                            Guion (desde caja/módulo):
+                        </p>
+                        <p class="text-gray-700">
+                            "Sr./Sra. [Apellido], <strong>¡muchas gracias por todo!</strong> Que tenga un gran día."
+                        </p>
+                    </div>
+
+                    <div class="bg-teal-50 border-l-4 border-teal-400 p-4 mt-4 rounded-r-lg">
+                        <p class="text-sm text-teal-800">
+                            <i class="fas fa-users mr-2"></i>
+                            <strong>Trabajo en equipo invisible:</strong> No importa quién lo haga, lo importante es que 
+                            NADIE se vaya sin despedida. Este es el verdadero significado de "Triángulo de Despedida": 
+                            cobertura total entre áreas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recordatorio Clave -->
+            <div class="highlight-box">
+                <h3 class="text-xl font-bold mb-4 flex items-center" style="color: var(--sanna-dark-green);">
+                    <i class="fas fa-exclamation-triangle mr-3" style="color: var(--farewell-orange);"></i>
+                    Recordatorio Clave
+                </h3>
+                <p class="text-gray-800 text-lg leading-relaxed mb-3">
+                    Tu rol es ser <strong>la firma de nuestro servicio</strong>. La última impresión es la que más perdura. 
+                    Un cierre cálido y seguro <strong>protege toda la experiencia construida en SANNA Clínica Belén</strong>.
+                </p>
+                <p class="text-gray-700 text-base italic">
+                    Piensa en esto: el paciente puede olvidar pequeños detalles del proceso, pero <strong>nunca olvida 
+                    cómo lo hiciste sentir al despedirlo</strong>. Esa última sonrisa, ese último "gracias por confiar en nosotros", 
+                    ese contacto visual sincero... <strong>eso es lo que queda grabado</strong>.
+                </p>
+            </div>
+
+            <!-- Mensaje Final -->
+            <div class="final-message-box">
+                <i class="fas fa-award text-6xl mb-4" style="color: var(--sanna-green);"></i>
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    ¡Eres el Embajador Final de SANNA!
+                </h3>
+                <p class="text-gray-700 text-lg mb-4">
+                    Cada despedida que haces con <strong>calidez, personalización y sinceridad</strong> convierte a un 
+                    paciente en un <strong>embajador natural de nuestra clínica</strong>.
+                </p>
+                <p class="text-gray-600 italic">
+                    Cuando alguien se va sintiendo valorado hasta el último segundo, <strong>nos recomienda con el corazón</strong>. 
+                    Y esa es la mejor publicidad que SANNA Clínica Belén puede tener.
                 </p>
             </div>
 
