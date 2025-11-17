@@ -39,14 +39,22 @@ Transformar la incertidumbre del paciente en calma y seguridad desde el primer c
 
 ## 🚀 URLs de Acceso
 
+### **Producción (LIVE) ✨**
+- **🌐 URL Principal**: https://sanna-protocolos.pages.dev
+- **👋 Anfitriona**: https://sanna-protocolos.pages.dev/anfitriona
+- **📋 Admisionista**: https://sanna-protocolos.pages.dev/admisionista
+- **⏰ Modular**: https://sanna-protocolos.pages.dev/modular
+
 ### **Desarrollo (Sandbox)**
 - **URL Principal**: https://3000-iogqy0sv3fencwh0q1egt-0e616f0a.sandbox.novita.ai
 - **Anfitriona**: https://3000-iogqy0sv3fencwh0q1egt-0e616f0a.sandbox.novita.ai/anfitriona
 - **Admisionista**: https://3000-iogqy0sv3fencwh0q1egt-0e616f0a.sandbox.novita.ai/admisionista
 - **Modular**: https://3000-iogqy0sv3fencwh0q1egt-0e616f0a.sandbox.novita.ai/modular
 
-### **Producción**
-- Pendiente de deployment a Cloudflare Pages
+### **Deployment Actual**
+- **Último Deploy**: https://c83bbec9.sanna-protocolos.pages.dev
+- **Proyecto Cloudflare**: sanna-protocolos
+- **Estado**: ✅ Activo y funcionando
 
 ## 🛠️ Stack Tecnológico
 
