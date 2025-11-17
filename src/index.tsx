@@ -68,19 +68,57 @@ app.get('/', (c) => {
             
             .logo-container {
                 background: white;
-                border-radius: 20px;
-                padding: 20px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                border-radius: 16px;
+                padding: 12px 20px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                display: inline-flex;
+                align-items: center;
+                gap: 12px;
+            }
+            
+            .header-logo {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 1000;
+                background: white;
+                border-radius: 16px;
+                padding: 12px 20px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                transition: all 0.3s ease;
+            }
+            
+            .header-logo:hover {
+                box-shadow: 0 6px 16px rgba(0, 133, 66, 0.25);
+                transform: translateY(-2px);
+            }
+            
+            .header-logo img {
+                height: 50px;
+                width: auto;
+            }
+            
+            @media (max-width: 768px) {
+                .header-logo {
+                    top: 15px;
+                    left: 15px;
+                    padding: 8px 12px;
+                }
+                .header-logo img {
+                    height: 40px;
+                }
             }
         </style>
     </head>
     <body>
-        <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Logo Fijo Superior Izquierda -->
+        <a href="/" class="header-logo">
+            <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
+        </a>
+        
+        <div class="container mx-auto px-4 py-8 max-w-6xl" style="margin-top: 60px;">
             <!-- Header -->
             <div class="text-center mb-12">
-                <div class="logo-container inline-block mb-6">
-                    <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén" class="h-24 mx-auto">
-                </div>
                 <h1 class="text-4xl font-bold mb-4" style="color: var(--sanna-green);">
                     <i class="fas fa-heart-pulse mr-2"></i>
                     Guía de Protocolos de Atención
@@ -249,10 +287,48 @@ app.get('/anfitriona', (c) => {
                 font-weight: bold;
                 font-size: 18px;
             }
+            
+            .header-logo {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 1000;
+                background: white;
+                border-radius: 16px;
+                padding: 12px 20px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                transition: all 0.3s ease;
+            }
+            
+            .header-logo:hover {
+                box-shadow: 0 6px 16px rgba(0, 133, 66, 0.25);
+                transform: translateY(-2px);
+            }
+            
+            .header-logo img {
+                height: 50px;
+                width: auto;
+            }
+            
+            @media (max-width: 768px) {
+                .header-logo {
+                    top: 15px;
+                    left: 15px;
+                    padding: 8px 12px;
+                }
+                .header-logo img {
+                    height: 40px;
+                }
+            }
         </style>
     </head>
     <body>
-        <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- Logo Fijo Superior Izquierda -->
+        <a href="/" class="header-logo">
+            <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
+        </a>
+        
+        <div class="container mx-auto px-4 py-8 max-w-5xl" style="margin-top: 60px;">
             <!-- Header -->
             <div class="mb-8">
                 <a href="/" class="back-btn mb-4">
@@ -559,10 +635,48 @@ app.get('/admisionista', (c) => {
                 font-weight: bold;
                 font-size: 18px;
             }
+            
+            .header-logo {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 1000;
+                background: white;
+                border-radius: 16px;
+                padding: 12px 20px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                transition: all 0.3s ease;
+            }
+            
+            .header-logo:hover {
+                box-shadow: 0 6px 16px rgba(0, 133, 66, 0.25);
+                transform: translateY(-2px);
+            }
+            
+            .header-logo img {
+                height: 50px;
+                width: auto;
+            }
+            
+            @media (max-width: 768px) {
+                .header-logo {
+                    top: 15px;
+                    left: 15px;
+                    padding: 8px 12px;
+                }
+                .header-logo img {
+                    height: 40px;
+                }
+            }
         </style>
     </head>
     <body>
-        <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- Logo Fijo Superior Izquierda -->
+        <a href="/" class="header-logo">
+            <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
+        </a>
+        
+        <div class="container mx-auto px-4 py-8 max-w-5xl" style="margin-top: 60px;">
             <!-- Header -->
             <div class="mb-8">
                 <a href="/" class="back-btn mb-4">
@@ -801,10 +915,48 @@ app.get('/modular', (c) => {
                 font-weight: 600;
                 margin-left: 8px;
             }
+            
+            .header-logo {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 1000;
+                background: white;
+                border-radius: 16px;
+                padding: 12px 20px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                transition: all 0.3s ease;
+            }
+            
+            .header-logo:hover {
+                box-shadow: 0 6px 16px rgba(0, 133, 66, 0.25);
+                transform: translateY(-2px);
+            }
+            
+            .header-logo img {
+                height: 50px;
+                width: auto;
+            }
+            
+            @media (max-width: 768px) {
+                .header-logo {
+                    top: 15px;
+                    left: 15px;
+                    padding: 8px 12px;
+                }
+                .header-logo img {
+                    height: 40px;
+                }
+            }
         </style>
     </head>
     <body>
-        <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- Logo Fijo Superior Izquierda -->
+        <a href="/" class="header-logo">
+            <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
+        </a>
+        
+        <div class="container mx-auto px-4 py-8 max-w-5xl" style="margin-top: 60px;">
             <!-- Header -->
             <div class="mb-8">
                 <a href="/" class="back-btn mb-4">
