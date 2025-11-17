@@ -66,73 +66,72 @@ app.get('/', (c) => {
                 transform: scale(1.05);
             }
             
-            .logo-container {
+            .page-header {
                 background: white;
-                border-radius: 16px;
-                padding: 12px 20px;
                 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                display: inline-flex;
+                padding: 20px 0;
+                margin-bottom: 32px;
+            }
+            
+            .header-content {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 24px;
+                display: flex;
+                justify-content: flex-end;
                 align-items: center;
-                gap: 12px;
             }
             
             .header-logo {
-                position: fixed;
-                top: 15px;
-                right: 15px;
-                z-index: 1000;
-                background: white;
-                border-radius: 12px;
-                padding: 10px 16px;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                transition: all 0.3s ease;
                 display: flex;
                 align-items: center;
             }
             
-            .header-logo:hover {
-                box-shadow: 0 4px 12px rgba(0, 133, 66, 0.2);
-                transform: translateY(-2px);
-            }
-            
             .header-logo img {
-                height: 50px;
+                height: 60px;
                 width: auto;
                 display: block;
                 object-fit: contain;
             }
             
             @media (max-width: 768px) {
-                .header-logo {
-                    top: 10px;
-                    right: 10px;
-                    padding: 8px 12px;
+                .page-header {
+                    padding: 15px 0;
+                    margin-bottom: 24px;
+                }
+                .header-content {
+                    padding: 0 16px;
+                }
+                .header-logo img {
+                    height: 50px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .page-header {
+                    padding: 12px 0;
+                }
+                .header-content {
+                    padding: 0 12px;
                 }
                 .header-logo img {
                     height: 40px;
                 }
             }
-            
-            @media (max-width: 480px) {
-                .header-logo {
-                    top: 8px;
-                    right: 8px;
-                    padding: 6px 10px;
-                }
-                .header-logo img {
-                    height: 35px;
-                }
-            }
         </style>
     </head>
     <body>
-        <!-- Logo Fijo Superior Izquierda -->
-        <a href="/" class="header-logo">
-            <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
-        </a>
+        <!-- Header con Logo -->
+        <header class="page-header">
+            <div class="header-content">
+                <a href="/" class="header-logo">
+                    <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
+                </a>
+            </div>
+        </header>
         
-        <div class="container mx-auto px-4 py-8 max-w-6xl" style="margin-top: 60px;">
-            <!-- Header -->
+        <div class="container mx-auto px-4 py-8 max-w-6xl">
+            <!-- Título Principal -->
             <div class="text-center mb-12">
                 <h1 class="text-4xl font-bold mb-4" style="color: var(--sanna-green);">
                     <i class="fas fa-heart-pulse mr-2"></i>
@@ -303,68 +302,74 @@ app.get('/anfitriona', (c) => {
                 font-size: 18px;
             }
             
-            .header-logo {
-                position: fixed;
-                top: 15px;
-                right: 15px;
-                z-index: 1000;
+            .page-header {
                 background: white;
-                border-radius: 12px;
-                padding: 10px 16px;
                 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                transition: all 0.3s ease;
+                padding: 20px 0;
+                margin-bottom: 32px;
+            }
+            
+            .header-content {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 24px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .header-logo {
                 display: flex;
                 align-items: center;
             }
             
-            .header-logo:hover {
-                box-shadow: 0 4px 12px rgba(0, 133, 66, 0.2);
-                transform: translateY(-2px);
-            }
-            
             .header-logo img {
-                height: 50px;
+                height: 60px;
                 width: auto;
                 display: block;
                 object-fit: contain;
             }
             
             @media (max-width: 768px) {
-                .header-logo {
-                    top: 10px;
-                    right: 10px;
-                    padding: 8px 12px;
+                .page-header {
+                    padding: 15px 0;
+                    margin-bottom: 24px;
+                }
+                .header-content {
+                    padding: 0 16px;
+                }
+                .header-logo img {
+                    height: 50px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .page-header {
+                    padding: 12px 0;
+                }
+                .header-content {
+                    padding: 0 12px;
                 }
                 .header-logo img {
                     height: 40px;
                 }
             }
-            
-            @media (max-width: 480px) {
-                .header-logo {
-                    top: 8px;
-                    right: 8px;
-                    padding: 6px 10px;
-                }
-                .header-logo img {
-                    height: 35px;
-                }
-            }
         </style>
     </head>
     <body>
-        <!-- Logo Fijo Superior Izquierda -->
-        <a href="/" class="header-logo">
-            <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
-        </a>
-        
-        <div class="container mx-auto px-4 py-8 max-w-5xl" style="margin-top: 60px;">
-            <!-- Header -->
-            <div class="mb-8">
-                <a href="/" class="back-btn mb-4">
+        <!-- Header con Logo y Botón Volver -->
+        <header class="page-header">
+            <div class="header-content">
+                <a href="/" class="back-btn">
                     <i class="fas fa-arrow-left mr-2"></i> Volver al Inicio
                 </a>
+                <a href="/" class="header-logo">
+                    <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
+                </a>
             </div>
+        </header>
+        
+        <div class="container mx-auto px-4 py-8 max-w-5xl">
 
             <div class="text-center mb-8">
                 <div class="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
@@ -666,68 +671,74 @@ app.get('/admisionista', (c) => {
                 font-size: 18px;
             }
             
-            .header-logo {
-                position: fixed;
-                top: 15px;
-                right: 15px;
-                z-index: 1000;
+            .page-header {
                 background: white;
-                border-radius: 12px;
-                padding: 10px 16px;
                 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                transition: all 0.3s ease;
+                padding: 20px 0;
+                margin-bottom: 32px;
+            }
+            
+            .header-content {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 24px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .header-logo {
                 display: flex;
                 align-items: center;
             }
             
-            .header-logo:hover {
-                box-shadow: 0 4px 12px rgba(0, 133, 66, 0.2);
-                transform: translateY(-2px);
-            }
-            
             .header-logo img {
-                height: 50px;
+                height: 60px;
                 width: auto;
                 display: block;
                 object-fit: contain;
             }
             
             @media (max-width: 768px) {
-                .header-logo {
-                    top: 10px;
-                    right: 10px;
-                    padding: 8px 12px;
+                .page-header {
+                    padding: 15px 0;
+                    margin-bottom: 24px;
+                }
+                .header-content {
+                    padding: 0 16px;
+                }
+                .header-logo img {
+                    height: 50px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .page-header {
+                    padding: 12px 0;
+                }
+                .header-content {
+                    padding: 0 12px;
                 }
                 .header-logo img {
                     height: 40px;
                 }
             }
-            
-            @media (max-width: 480px) {
-                .header-logo {
-                    top: 8px;
-                    right: 8px;
-                    padding: 6px 10px;
-                }
-                .header-logo img {
-                    height: 35px;
-                }
-            }
         </style>
     </head>
     <body>
-        <!-- Logo Fijo Superior Izquierda -->
-        <a href="/" class="header-logo">
-            <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
-        </a>
-        
-        <div class="container mx-auto px-4 py-8 max-w-5xl" style="margin-top: 60px;">
-            <!-- Header -->
-            <div class="mb-8">
-                <a href="/" class="back-btn mb-4">
+        <!-- Header con Logo y Botón Volver -->
+        <header class="page-header">
+            <div class="header-content">
+                <a href="/" class="back-btn">
                     <i class="fas fa-arrow-left mr-2"></i> Volver al Inicio
                 </a>
+                <a href="/" class="header-logo">
+                    <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
+                </a>
             </div>
+        </header>
+        
+        <div class="container mx-auto px-4 py-8 max-w-5xl">
 
             <div class="text-center mb-8">
                 <div class="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
@@ -1011,18 +1022,19 @@ app.get('/modular', (c) => {
         </style>
     </head>
     <body>
-        <!-- Logo Fijo Superior Izquierda -->
-        <a href="/" class="header-logo">
-            <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
-        </a>
-        
-        <div class="container mx-auto px-4 py-8 max-w-5xl" style="margin-top: 60px;">
-            <!-- Header -->
-            <div class="mb-8">
-                <a href="/" class="back-btn mb-4">
+        <!-- Header con Logo y Botón Volver -->
+        <header class="page-header">
+            <div class="header-content">
+                <a href="/" class="back-btn">
                     <i class="fas fa-arrow-left mr-2"></i> Volver al Inicio
                 </a>
+                <a href="/" class="header-logo">
+                    <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
+                </a>
             </div>
+        </header>
+        
+        <div class="container mx-auto px-4 py-8 max-w-5xl">
 
             <div class="text-center mb-8">
                 <div class="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
