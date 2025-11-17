@@ -99,95 +99,69 @@ app.get('/', (c) => {
                 </p>
             </div>
 
-            <!-- Protocolos por Categoría -->
+            <!-- Selector de Protocolos -->
             <div class="mb-12">
-                <h2 class="text-3xl font-bold text-center mb-2" style="color: var(--sanna-dark-green);">
+                <h2 class="text-3xl font-bold text-center mb-3" style="color: var(--sanna-dark-green);">
                     Selecciona tu Protocolo
                 </h2>
-                <p class="text-center text-gray-600 mb-8">Elige el protocolo según tu rol y responsabilidad</p>
+                <p class="text-center text-gray-600 mb-10 text-lg">Elige el protocolo que necesitas consultar</p>
                 
-                <!-- Protocolo #1: Sello en Acción -->
-                <div class="mb-10">
-                    <h3 class="text-2xl font-bold mb-6 flex items-center" style="color: var(--sanna-green);">
-                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-bold mr-3">#1</span>
-                        Sello en Acción - Primera Impresión y Atención
-                    </h3>
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <!-- Anfitriona -->
-                        <div class="card-role p-6 text-center">
-                            <div class="mb-4">
-                                <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
-                                    <i class="fas fa-hands-helping text-4xl text-white"></i>
+                <!-- Protocolo #1 -->
+                <div class="card-role p-8 mb-6">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                        <div class="flex-1">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-lg font-bold mr-4">#1</span>
+                                <div>
+                                    <h3 class="text-2xl font-bold mb-1" style="color: var(--sanna-green);">
+                                        Sello en Acción
+                                    </h3>
+                                    <p class="text-gray-600">Primera impresión y atención al paciente</p>
                                 </div>
                             </div>
-                            <h4 class="text-xl font-bold mb-2" style="color: var(--sanna-green);">Anfitriona</h4>
-                            <p class="text-gray-600 text-sm mb-4">Primera impresión y bienvenida</p>
-                            <a href="/protocolo1-anfitriona" class="sanna-btn w-full block text-center text-sm">
-                                Ver Protocolo <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
+                            <div class="ml-16 mb-4">
+                                <p class="text-gray-700 mb-2">
+                                    <i class="fas fa-users mr-2" style="color: var(--sanna-green);"></i>
+                                    <strong>Roles:</strong> Anfitriona, Admisionista, Modular
+                                </p>
+                                <p class="text-gray-600 text-sm">
+                                    Protocolos para transformar la incertidumbre en calma desde el primer contacto
+                                </p>
+                            </div>
                         </div>
-
-                        <!-- Admisionista -->
-                        <div class="card-role p-6 text-center">
-                            <div class="mb-4">
-                                <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
-                                    <i class="fas fa-clipboard-check text-4xl text-white"></i>
-                                </div>
-                            </div>
-                            <h4 class="text-xl font-bold mb-2" style="color: var(--sanna-green);">Admisionista</h4>
-                            <p class="text-gray-600 text-sm mb-4">Registro ágil y empático</p>
-                            <a href="/protocolo1-admisionista" class="sanna-btn w-full block text-center text-sm">
-                                Ver Protocolo <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
-
-                        <!-- Modular -->
-                        <div class="card-role p-6 text-center">
-                            <div class="mb-4">
-                                <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
-                                    <i class="fas fa-user-clock text-4xl text-white"></i>
-                                </div>
-                            </div>
-                            <h4 class="text-xl font-bold mb-2" style="color: var(--sanna-green);">Modular</h4>
-                            <p class="text-gray-600 text-sm mb-4">Gestión de espera proactiva</p>
-                            <a href="/protocolo1-modular" class="sanna-btn w-full block text-center text-sm">
+                        <div class="w-full md:w-auto">
+                            <a href="/protocolo1" class="sanna-btn block text-center whitespace-nowrap">
                                 Ver Protocolo <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Protocolo #2: Verificación Documental -->
-                <div class="mb-10">
-                    <h3 class="text-2xl font-bold mb-6 flex items-center" style="color: var(--sanna-green);">
-                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-bold mr-3">#2</span>
-                        Verificación Documental y Validación de Seguros
-                    </h3>
-                    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                        <!-- Admisionista -->
-                        <div class="card-role p-6 text-center">
-                            <div class="mb-4">
-                                <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
-                                    <i class="fas fa-file-invoice text-4xl text-white"></i>
+                <!-- Protocolo #2 -->
+                <div class="card-role p-8 mb-6">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                        <div class="flex-1">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-lg font-bold mr-4">#2</span>
+                                <div>
+                                    <h3 class="text-2xl font-bold mb-1" style="color: var(--sanna-green);">
+                                        Verificación Documental
+                                    </h3>
+                                    <p class="text-gray-600">Validación de seguros del paciente ambulatorio</p>
                                 </div>
                             </div>
-                            <h4 class="text-xl font-bold mb-2" style="color: var(--sanna-green);">Admisionista</h4>
-                            <p class="text-gray-600 text-sm mb-4">Validación de seguros y documentos</p>
-                            <a href="/protocolo2-admisionista" class="sanna-btn w-full block text-center text-sm">
-                                Ver Protocolo <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
+                            <div class="ml-16 mb-4">
+                                <p class="text-gray-700 mb-2">
+                                    <i class="fas fa-users mr-2" style="color: var(--sanna-green);"></i>
+                                    <strong>Roles:</strong> Admisionista, Modular
+                                </p>
+                                <p class="text-gray-600 text-sm">
+                                    Protocolos para gestionar documentación, seguros y situaciones difíciles con empatía
+                                </p>
+                            </div>
                         </div>
-
-                        <!-- Modular -->
-                        <div class="card-role p-6 text-center">
-                            <div class="mb-4">
-                                <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
-                                    <i class="fas fa-user-check text-4xl text-white"></i>
-                                </div>
-                            </div>
-                            <h4 class="text-xl font-bold mb-2" style="color: var(--sanna-green);">Modular</h4>
-                            <p class="text-gray-600 text-sm mb-4">Resolución y facilitación</p>
-                            <a href="/protocolo2-modular" class="sanna-btn w-full block text-center text-sm">
+                        <div class="w-full md:w-auto">
+                            <a href="/protocolo2" class="sanna-btn block text-center whitespace-nowrap">
                                 Ver Protocolo <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -1152,6 +1126,302 @@ app.get('/modular', (c) => {
             <div class="text-center mt-12">
                 <a href="/" class="back-btn">
                     <i class="fas fa-home mr-2"></i> Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </body>
+    </html>
+  `)
+})
+
+// Página de selección de cargo - Protocolo #1
+app.get('/protocolo1', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protocolo #1 - Selecciona tu Cargo | SANNA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+            
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            :root {
+                --sanna-green: #008542;
+                --sanna-dark-green: #006633;
+                --sanna-light-green: #00a854;
+            }
+            
+            body {
+                background: linear-gradient(135deg, #f0fdf4 0%, #e8f5e9 100%);
+                min-height: 100vh;
+            }
+            
+            .card-role {
+                transition: all 0.3s ease;
+                background: white;
+                border-radius: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            .card-role:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 24px rgba(0, 133, 66, 0.2);
+            }
+            
+            .sanna-btn {
+                background: var(--sanna-green);
+                color: white;
+                padding: 16px 32px;
+                border-radius: 12px;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                border: none;
+                cursor: pointer;
+                display: inline-block;
+                text-decoration: none;
+            }
+            
+            .sanna-btn:hover {
+                background: var(--sanna-dark-green);
+                transform: scale(1.05);
+            }
+            
+            .back-btn {
+                background: var(--sanna-green);
+                color: white;
+                padding: 12px 24px;
+                border-radius: 10px;
+                text-decoration: none;
+                display: inline-block;
+                transition: all 0.3s ease;
+            }
+            
+            .back-btn:hover {
+                background: var(--sanna-dark-green);
+                transform: translateX(-5px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mx-auto px-4 py-8 max-w-5xl">
+            <!-- Header -->
+            <div class="mb-8">
+                <a href="/" class="back-btn mb-4">
+                    <i class="fas fa-arrow-left mr-2"></i> Volver a Protocolos
+                </a>
+            </div>
+
+            <!-- Título -->
+            <div class="text-center mb-12">
+                <div class="inline-block bg-green-100 text-green-800 px-6 py-3 rounded-full text-lg font-bold mb-4">
+                    PROTOCOLO #1
+                </div>
+                <h1 class="text-4xl font-bold mb-3" style="color: var(--sanna-green);">
+                    Sello en Acción
+                </h1>
+                <p class="text-xl text-gray-600 mb-6">Primera impresión y atención al paciente</p>
+                <p class="text-gray-500 max-w-2xl mx-auto">
+                    Selecciona tu cargo para ver los protocolos específicos de tu rol
+                </p>
+            </div>
+
+            <!-- Selector de Cargo -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Anfitriona -->
+                <div class="card-role p-8 text-center">
+                    <div class="mb-6">
+                        <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
+                            <i class="fas fa-hands-helping text-5xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">Anfitriona</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Primera impresión y bienvenida en Torre SANNA y Torre Belén</p>
+                    <a href="/protocolo1-anfitriona" class="sanna-btn w-full block text-center">
+                        Ver Mi Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Admisionista -->
+                <div class="card-role p-8 text-center">
+                    <div class="mb-6">
+                        <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
+                            <i class="fas fa-clipboard-check text-5xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">Admisionista</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Registro ágil y empático con el paciente</p>
+                    <a href="/protocolo1-admisionista" class="sanna-btn w-full block text-center">
+                        Ver Mi Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Modular -->
+                <div class="card-role p-8 text-center">
+                    <div class="mb-6">
+                        <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
+                            <i class="fas fa-user-clock text-5xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">Modular</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Gestión de espera proactiva en Torre Belén</p>
+                    <a href="/protocolo1-modular" class="sanna-btn w-full block text-center">
+                        Ver Mi Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center">
+                <a href="/" class="back-btn">
+                    <i class="fas fa-home mr-2"></i> Volver a Inicio
+                </a>
+            </div>
+        </div>
+    </body>
+    </html>
+  `)
+})
+
+// Página de selección de cargo - Protocolo #2
+app.get('/protocolo2', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protocolo #2 - Selecciona tu Cargo | SANNA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+            
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            :root {
+                --sanna-green: #008542;
+                --sanna-dark-green: #006633;
+                --sanna-light-green: #00a854;
+            }
+            
+            body {
+                background: linear-gradient(135deg, #f0fdf4 0%, #e8f5e9 100%);
+                min-height: 100vh;
+            }
+            
+            .card-role {
+                transition: all 0.3s ease;
+                background: white;
+                border-radius: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            .card-role:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 24px rgba(0, 133, 66, 0.2);
+            }
+            
+            .sanna-btn {
+                background: var(--sanna-green);
+                color: white;
+                padding: 16px 32px;
+                border-radius: 12px;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                border: none;
+                cursor: pointer;
+                display: inline-block;
+                text-decoration: none;
+            }
+            
+            .sanna-btn:hover {
+                background: var(--sanna-dark-green);
+                transform: scale(1.05);
+            }
+            
+            .back-btn {
+                background: var(--sanna-green);
+                color: white;
+                padding: 12px 24px;
+                border-radius: 10px;
+                text-decoration: none;
+                display: inline-block;
+                transition: all 0.3s ease;
+            }
+            
+            .back-btn:hover {
+                background: var(--sanna-dark-green);
+                transform: translateX(-5px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mx-auto px-4 py-8 max-w-5xl">
+            <!-- Header -->
+            <div class="mb-8">
+                <a href="/" class="back-btn mb-4">
+                    <i class="fas fa-arrow-left mr-2"></i> Volver a Protocolos
+                </a>
+            </div>
+
+            <!-- Título -->
+            <div class="text-center mb-12">
+                <div class="inline-block bg-green-100 text-green-800 px-6 py-3 rounded-full text-lg font-bold mb-4">
+                    PROTOCOLO #2
+                </div>
+                <h1 class="text-4xl font-bold mb-3" style="color: var(--sanna-green);">
+                    Verificación Documental
+                </h1>
+                <p class="text-xl text-gray-600 mb-6">Validación de seguros del paciente ambulatorio</p>
+                <p class="text-gray-500 max-w-2xl mx-auto">
+                    Selecciona tu cargo para ver los protocolos específicos de tu rol
+                </p>
+            </div>
+
+            <!-- Selector de Cargo -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+                <!-- Admisionista -->
+                <div class="card-role p-8 text-center">
+                    <div class="mb-6">
+                        <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
+                            <i class="fas fa-file-invoice text-5xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">Admisionista</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Punto de seguridad administrativa para validación de seguros y documentos</p>
+                    <a href="/protocolo2-admisionista" class="sanna-btn w-full block text-center">
+                        Ver Mi Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Modular -->
+                <div class="card-role p-8 text-center">
+                    <div class="mb-6">
+                        <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
+                            <i class="fas fa-user-check text-5xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">Modular</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Punto de resolución y enlace en el piso de consultorios</p>
+                    <a href="/protocolo2-modular" class="sanna-btn w-full block text-center">
+                        Ver Mi Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center">
+                <a href="/" class="back-btn">
+                    <i class="fas fa-home mr-2"></i> Volver a Inicio
                 </a>
             </div>
         </div>
