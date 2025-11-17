@@ -198,6 +198,37 @@ app.get('/', (c) => {
                         </div>
                     </div>
                 </div>
+
+                <!-- Protocolo #4 -->
+                <div class="card-role p-8 mb-6">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                        <div class="flex-1">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-lg font-bold mr-4">#4</span>
+                                <div>
+                                    <h3 class="text-2xl font-bold mb-1" style="color: var(--sanna-green);">
+                                        Gestión de la Espera
+                                    </h3>
+                                    <p class="text-gray-600">Transformando tiempos de incertidumbre en cuidado</p>
+                                </div>
+                            </div>
+                            <div class="ml-16 mb-4">
+                                <p class="text-gray-700 mb-2">
+                                    <i class="fas fa-user-clock mr-2" style="color: var(--sanna-green);"></i>
+                                    <strong>Rol:</strong> Modular
+                                </p>
+                                <p class="text-gray-600 text-sm">
+                                    Gestión proactiva de demoras y comunicación transparente con pacientes en espera
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-auto">
+                            <a href="/protocolo4-modular" class="sanna-btn block text-center whitespace-nowrap">
+                                Ver Protocolo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Footer -->
@@ -3201,6 +3232,385 @@ app.get('/protocolo3-admisionista', (c) => {
 // Ruta alternativa para Modular (comparte el mismo contenido)
 app.get('/protocolo3-modular', (c) => {
   return c.redirect('/protocolo3-admisionista')
+})
+
+// PROTOCOLO #4: Gestión de la Espera - Modular
+app.get('/protocolo4-modular', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protocolo #4 - Gestión de la Espera | SANNA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+            
+            :root {
+                --sanna-green: #008542;
+                --sanna-dark-green: #006633;
+                --sanna-light-green: #00a854;
+            }
+            
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            body {
+                background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                min-height: 100vh;
+            }
+            
+            .protocol-header {
+                background: linear-gradient(135deg, var(--sanna-green) 0%, var(--sanna-dark-green) 100%);
+                color: white;
+                padding: 2rem;
+                border-radius: 15px;
+                margin-bottom: 2rem;
+                box-shadow: 0 10px 30px rgba(0, 133, 66, 0.3);
+            }
+            
+            .content-card {
+                background: white;
+                border-radius: 15px;
+                padding: 2rem;
+                margin-bottom: 1.5rem;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                border-left: 5px solid var(--sanna-green);
+                transition: all 0.3s ease;
+            }
+            
+            .content-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 30px rgba(0, 133, 66, 0.2);
+            }
+            
+            .moment-badge {
+                background: linear-gradient(135deg, var(--sanna-green) 0%, var(--sanna-light-green) 100%);
+                color: white;
+                padding: 0.5rem 1.5rem;
+                border-radius: 50px;
+                font-weight: 600;
+                display: inline-block;
+                margin-bottom: 1rem;
+                box-shadow: 0 4px 15px rgba(0, 133, 66, 0.3);
+            }
+            
+            .time-badge {
+                background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+                color: white;
+                padding: 0.4rem 1rem;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 0.9rem;
+                display: inline-block;
+                margin-left: 1rem;
+            }
+            
+            .guion-box {
+                background: linear-gradient(to right, #f0fdf4, #dcfce7);
+                border-left: 4px solid var(--sanna-green);
+                padding: 1.5rem;
+                border-radius: 10px;
+                margin: 1rem 0;
+                font-style: italic;
+            }
+            
+            .action-header {
+                background: linear-gradient(to right, #fef3c7, #fde68a);
+                border-left: 4px solid #f59e0b;
+                padding: 1rem 1.5rem;
+                border-radius: 10px;
+                margin: 1rem 0;
+                font-weight: 600;
+            }
+            
+            .icon-circle {
+                width: 40px;
+                height: 40px;
+                background: var(--sanna-green);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.2rem;
+                flex-shrink: 0;
+                margin-right: 1rem;
+                box-shadow: 0 4px 10px rgba(0, 133, 66, 0.3);
+            }
+            
+            .highlight-box {
+                background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+                border: 2px solid #f59e0b;
+                border-radius: 15px;
+                padding: 1.5rem;
+                margin: 2rem 0;
+                box-shadow: 0 5px 20px rgba(245, 158, 11, 0.2);
+            }
+            
+            .back-btn {
+                background: white;
+                color: var(--sanna-green);
+                padding: 1rem 2rem;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: 600;
+                display: inline-block;
+                border: 2px solid var(--sanna-green);
+                transition: all 0.3s ease;
+            }
+            
+            .back-btn:hover {
+                background: var(--sanna-green);
+                color: white;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 20px rgba(0, 133, 66, 0.3);
+            }
+            
+            @media (max-width: 768px) {
+                .protocol-header {
+                    padding: 1.5rem;
+                }
+                
+                .content-card {
+                    padding: 1.5rem;
+                }
+                
+                .icon-circle {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body class="p-4 md:p-8">
+        <div class="max-w-5xl mx-auto">
+            
+            <!-- Header -->
+            <div class="protocol-header">
+                <div class="flex items-center justify-between flex-wrap gap-4">
+                    <div class="flex items-center">
+                        <span class="bg-white text-green-700 px-4 py-2 rounded-full text-xl font-bold mr-4">#4</span>
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold mb-2">
+                                Gestión de la Espera
+                            </h1>
+                            <p class="text-green-100 text-lg">
+                                <i class="fas fa-user-clock mr-2"></i>
+                                Modular
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-sm text-green-100 mb-1">Protocolo</p>
+                        <p class="text-2xl font-bold">Sala de Espera</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tu Misión -->
+            <div class="content-card">
+                <div class="flex items-start">
+                    <div class="icon-circle">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">
+                            Tu Misión
+                        </h2>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Eres el/la <strong>gestor/a de la tranquilidad en la sala de espera</strong>. Tu objetivo es 
+                            <strong>transformar un tiempo de incertidumbre en una experiencia de cuidado y respeto</strong>, 
+                            gestionando activamente las expectativas y demostrando con cada acción que 
+                            <strong>el tiempo de nuestros pacientes es valioso para SANNA Clínica Belén</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Momento 1: Comunicación Proactiva (+15 min) -->
+            <div class="content-card">
+                <div class="flex items-center flex-wrap mb-4">
+                    <span class="moment-badge">
+                        <i class="fas fa-volume-up mr-2"></i>
+                        Momento 1
+                    </span>
+                    <span class="time-badge">
+                        <i class="fas fa-clock mr-2"></i>
+                        +15 minutos
+                    </span>
+                </div>
+                
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    La Comunicación Proactiva de Demora
+                </h3>
+                <p class="text-gray-600 mb-4">
+                    <strong>Cuándo:</strong> Primer aviso cuando la demora supera los 15 minutos
+                </p>
+
+                <div class="action-header">
+                    <i class="fas fa-hand-point-right mr-2" style="color: #f59e0b;"></i>
+                    ACCIÓN: Dirígete a la sala de espera de forma general, con un tono de voz claro y sereno.
+                </div>
+
+                <div class="guion-box">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                        Guion:
+                    </p>
+                    <p class="text-gray-700">
+                        "Estimados pacientes, buenas tardes. Les habla [Nombre], del módulo de atención. 
+                        <strong>Quiero informarles con total transparencia</strong> que el Dr. [Apellido] presenta 
+                        una demora de aproximadamente 20 minutos. Les ofrecemos nuestras <strong>más sinceras disculpas</strong> 
+                        y agradecemos mucho su paciencia."
+                    </p>
+                </div>
+
+                <div class="bg-green-50 border-l-4 border-green-400 p-4 mt-4 rounded-r-lg">
+                    <p class="text-sm text-green-800">
+                        <i class="fas fa-lightbulb mr-2"></i>
+                        <strong>Clave del éxito:</strong> La comunicación proactiva antes de que pregunten demuestra 
+                        respeto y evita la frustración acumulada. Es mejor informar temprano que esperar a que los 
+                        pacientes se acerquen molestos al módulo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Momento 2: Gestión Personalizada (+30 min) -->
+            <div class="content-card">
+                <div class="flex items-center flex-wrap mb-4">
+                    <span class="moment-badge">
+                        <i class="fas fa-user-check mr-2"></i>
+                        Momento 2
+                    </span>
+                    <span class="time-badge">
+                        <i class="fas fa-clock mr-2"></i>
+                        +30 minutos
+                    </span>
+                </div>
+                
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    La Gestión Personalizada de Demora
+                </h3>
+                <p class="text-gray-600 mb-4">
+                    <strong>Cuándo:</strong> Cuando la demora se extiende a más de 30 minutos (demora prolongada)
+                </p>
+
+                <div class="action-header">
+                    <i class="fas fa-hand-point-right mr-2" style="color: #f59e0b;"></i>
+                    ACCIÓN: Acércate individualmente a cada paciente, a la altura de sus ojos, para ofrecerle control sobre su tiempo.
+                </div>
+
+                <div class="guion-box">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                        Guion:
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        "Señor/a [Apellido], me acerco personalmente para comentarle que <strong>la demora se ha extendido</strong>. 
+                        En SANNA Clínica Belén <strong>valoramos inmensamente su tiempo</strong> y quiero ofrecerle 
+                        <strong>alternativas claras</strong>:
+                    </p>
+                    <div class="ml-6 mb-3">
+                        <p class="text-gray-700 mb-2">
+                            <strong>1)</strong> Puede continuar esperando, y <strong>mi compromiso es mantenerle al tanto</strong>, o
+                        </p>
+                        <p class="text-gray-700">
+                            <strong>2)</strong> Si lo prefiere, podemos <strong>reagendar su cita ahora mismo</strong>.
+                        </p>
+                    </div>
+                    <p class="text-gray-700">
+                        ¿Cuál de estas opciones le parece mejor?"
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mt-4 rounded-r-lg">
+                    <p class="text-sm text-blue-800 mb-3">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <strong>Por qué es efectivo:</strong>
+                    </p>
+                    <ul class="text-sm text-blue-800 space-y-2 ml-4">
+                        <li>• <strong>Atención personalizada</strong> hace sentir al paciente valorado individualmente</li>
+                        <li>• <strong>Ofrecer opciones</strong> devuelve el control de su tiempo al paciente</li>
+                        <li>• <strong>Ponerte a su altura física</strong> demuestra respeto y atención genuina</li>
+                        <li>• <strong>Anticiparte a su molestia</strong> desactiva la frustración acumulada</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Momento 3: Orientación Post-Consulta -->
+            <div class="content-card">
+                <span class="moment-badge">
+                    <i class="fas fa-door-open mr-2"></i>
+                    Momento 3
+                </span>
+                
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--sanna-green);">
+                    La Orientación Post-Consulta
+                </h3>
+                <p class="text-gray-600 mb-4">
+                    <strong>Cuándo:</strong> Cuando el paciente sale del consultorio médico
+                </p>
+
+                <div class="action-header">
+                    <i class="fas fa-hand-point-right mr-2" style="color: #f59e0b;"></i>
+                    ACCIÓN: Mantente atento/a a los pacientes que salen del consultorio. Acércate proactivamente para ser su guía.
+                </div>
+
+                <div class="guion-box">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-quote-left mr-2" style="color: var(--sanna-green);"></i>
+                        Guion:
+                    </p>
+                    <p class="text-gray-700">
+                        "Señor/a [Apellido], <strong>¡qué bueno que ya terminó su consulta!</strong> Espero que todo haya ido muy bien. 
+                        Para guiarlo en su siguiente paso, le informo que debe dirigirse a <strong>[Caja/Laboratorio]</strong>. 
+                        Está en el piso [número], [dar indicación clara]. 
+                        <strong>¿La indicación es clara o desea que le acompañe?</strong>"
+                    </p>
+                </div>
+
+                <div class="bg-purple-50 border-l-4 border-purple-400 p-4 mt-4 rounded-r-lg">
+                    <p class="text-sm text-purple-800">
+                        <i class="fas fa-heart mr-2"></i>
+                        <strong>El toque final:</strong> Este momento cierra la experiencia del paciente de manera positiva. 
+                        Después de haber esperado, tu atención proactiva post-consulta les demuestra que su viaje completo 
+                        importa, no solo la consulta médica. Es la última impresión que se llevan del módulo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recordatorio Clave -->
+            <div class="highlight-box">
+                <h3 class="text-xl font-bold mb-4 flex items-center" style="color: var(--sanna-dark-green);">
+                    <i class="fas fa-exclamation-triangle mr-3" style="color: #f59e0b;"></i>
+                    Recordatorio Clave
+                </h3>
+                <p class="text-gray-800 text-lg leading-relaxed mb-3">
+                    Tu rol es ser <strong>la prueba visible del respeto que SANNA Clínica Belén tiene por sus pacientes</strong>. 
+                    La comunicación proactiva convierte una <strong>espera frustrante en una demostración de cuidado</strong>.
+                </p>
+                <p class="text-gray-700 text-base italic">
+                    Cuando un paciente ve que te adelantas a informar, te acercas personalmente en momentos difíciles, 
+                    y guías proactivamente después de la consulta, <strong>entiende que su tiempo y su experiencia son valiosos</strong>. 
+                    No solo gestionas la espera, <strong>gestionas la confianza</strong>.
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-12">
+                <a href="/" class="back-btn">
+                    <i class="fas fa-home mr-2"></i> Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </body>
+    </html>
+  `)
 })
 
 export default app
