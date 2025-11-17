@@ -53,13 +53,16 @@ Transformar la incertidumbre del paciente en calma y seguridad desde el primer c
 - **Admisionista**: https://sanna-protocolos.pages.dev/admisionista
 - **Modular**: https://sanna-protocolos.pages.dev/modular
 
-### **Protocolo #3: Derivación y Coordinación** 🆕
+### **Protocolo #3: Derivación y Coordinación**
 - **Página del Protocolo**: https://sanna-protocolos.pages.dev/protocolo3
 - **Anfitriona**: https://sanna-protocolos.pages.dev/protocolo3-anfitriona
 - **Admisionista/Modular**: https://sanna-protocolos.pages.dev/protocolo3-admisionista
 
+### **Protocolo #4: Gestión de la Espera** 🆕
+- **Modular**: https://sanna-protocolos.pages.dev/protocolo4-modular
+
 ### **Deployment Actual**
-- **Último Deploy**: https://f7ef477b.sanna-protocolos.pages.dev
+- **Último Deploy**: https://bbb2f6fc.sanna-protocolos.pages.dev
 - **Proyecto Cloudflare**: sanna-protocolos
 - **Estado**: ✅ Activo y funcionando
 
@@ -128,15 +131,22 @@ Esta app sirve para:
 - ✅ Admisionista (registro ágil y empático)
 - ✅ Modular (gestión de consultas y demoras)
 
-#### **Protocolo #3: Derivación y Coordinación** 🆕
+#### **Protocolo #3: Derivación y Coordinación**
 - ✅ Anfitriona (acompañamiento de pacientes vulnerables)
 - ✅ Admisionista/Modular (derivación segura y coordinación)
 - ✅ 3 momentos clave con énfasis en "Cierre de Verificación"
 - ✅ Sistema de "Llamada de 1 Minuto" para coordinación proactiva
 
+#### **Protocolo #4: Gestión de la Espera** 🆕
+- ✅ Modular (gestión de sala de espera y demoras)
+- ✅ 3 momentos con indicadores de tiempo (+15min, +30min)
+- ✅ Comunicación proactiva de demoras
+- ✅ Gestión personalizada con opciones al paciente
+- ✅ Orientación post-consulta proactiva
+
 ## 🔜 Próximos Pasos Recomendados
 
-1. **Agregar Protocolos #4 y #5** siguiendo la estructura establecida
+1. **Agregar Protocolo #5** siguiendo la estructura establecida
 2. **Testing con usuarios reales** del personal SANNA
 3. **Agregar módulo de evaluación** (quiz de conocimientos)
 4. **Sistema de búsqueda** de guiones específicos
