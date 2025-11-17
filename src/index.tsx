@@ -66,70 +66,10 @@ app.get('/', (c) => {
                 transform: scale(1.05);
             }
             
-            .page-header {
-                background: white;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                padding: 20px 0;
-                margin-bottom: 32px;
-            }
-            
-            .header-content {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 0 24px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-            }
-            
-            .header-logo {
-                display: flex;
-                align-items: center;
-            }
-            
-            .header-logo img {
-                height: 60px;
-                width: auto;
-                display: block;
-                object-fit: contain;
-            }
-            
-            @media (max-width: 768px) {
-                .page-header {
-                    padding: 15px 0;
-                    margin-bottom: 24px;
-                }
-                .header-content {
-                    padding: 0 16px;
-                }
-                .header-logo img {
-                    height: 50px;
-                }
-            }
-            
-            @media (max-width: 480px) {
-                .page-header {
-                    padding: 12px 0;
-                }
-                .header-content {
-                    padding: 0 12px;
-                }
-                .header-logo img {
-                    height: 40px;
-                }
-            }
+
         </style>
     </head>
     <body>
-        <!-- Header con Logo -->
-        <header class="page-header">
-            <div class="header-content">
-                <a href="/" class="header-logo">
-                    <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
-                </a>
-            </div>
-        </header>
-        
         <div class="container mx-auto px-4 py-8 max-w-6xl">
             <!-- Título Principal -->
             <div class="text-center mb-12">
@@ -357,19 +297,13 @@ app.get('/anfitriona', (c) => {
         </style>
     </head>
     <body>
-        <!-- Header con Logo y Botón Volver -->
-        <header class="page-header">
-            <div class="header-content">
-                <a href="/" class="back-btn">
+        <div class="container mx-auto px-4 py-8 max-w-5xl">
+            <!-- Header -->
+            <div class="mb-8">
+                <a href="/" class="back-btn mb-4">
                     <i class="fas fa-arrow-left mr-2"></i> Volver al Inicio
                 </a>
-                <a href="/" class="header-logo">
-                    <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
-                </a>
             </div>
-        </header>
-        
-        <div class="container mx-auto px-4 py-8 max-w-5xl">
 
             <div class="text-center mb-8">
                 <div class="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
@@ -726,19 +660,13 @@ app.get('/admisionista', (c) => {
         </style>
     </head>
     <body>
-        <!-- Header con Logo y Botón Volver -->
-        <header class="page-header">
-            <div class="header-content">
-                <a href="/" class="back-btn">
+        <div class="container mx-auto px-4 py-8 max-w-5xl">
+            <!-- Header -->
+            <div class="mb-8">
+                <a href="/" class="back-btn mb-4">
                     <i class="fas fa-arrow-left mr-2"></i> Volver al Inicio
                 </a>
-                <a href="/" class="header-logo">
-                    <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
-                </a>
             </div>
-        </header>
-        
-        <div class="container mx-auto px-4 py-8 max-w-5xl">
 
             <div class="text-center mb-8">
                 <div class="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
@@ -1022,19 +950,13 @@ app.get('/modular', (c) => {
         </style>
     </head>
     <body>
-        <!-- Header con Logo y Botón Volver -->
-        <header class="page-header">
-            <div class="header-content">
-                <a href="/" class="back-btn">
+        <div class="container mx-auto px-4 py-8 max-w-5xl">
+            <!-- Header -->
+            <div class="mb-8">
+                <a href="/" class="back-btn mb-4">
                     <i class="fas fa-arrow-left mr-2"></i> Volver al Inicio
                 </a>
-                <a href="/" class="header-logo">
-                    <img src="https://www.genspark.ai/api/files/s/wF2CM9Ol" alt="SANNA Clínica Belén">
-                </a>
             </div>
-        </header>
-        
-        <div class="container mx-auto px-4 py-8 max-w-5xl">
 
             <div class="text-center mb-8">
                 <div class="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style="background: linear-gradient(135deg, var(--sanna-green), var(--sanna-light-green));">
