@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": null,
+  "outputDirectory": "dist",
+  "regions": ["iad1"],
+  "functions": {
+    "dist/_worker.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
+}

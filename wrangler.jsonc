@@ -1,11 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "sanna-protocolos",
-  "compatibility_date": "2025-11-17",
+  "compatibility_date": "2024-01-01",
   "pages_build_output_dir": "./dist",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
+  "limits": {
+    "cpu_ms": 50
+  }
   // "vars": {
   //   "MY_VAR": "my-variable"
   // },
