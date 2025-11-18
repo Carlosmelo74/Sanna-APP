@@ -71,10 +71,28 @@ Transformar la incertidumbre del paciente en calma y seguridad desde el primer c
 - **Roles**: Anfitriona, Admisionista, Modular (quien tiene el último contacto)
 
 ### **Deployment Actual**
-- **Último Deploy**: https://012abc87.sanna-protocolos.pages.dev
-- **Proyecto Cloudflare**: sanna-protocolos
+
+#### **Opción 1: Cloudflare Pages (Primaria)** 🌐
+- **URL Principal**: https://sanna-protocolos.pages.dev
+- **Último Deploy**: https://28bb395a.sanna-protocolos.pages.dev
 - **Estado**: ✅ Activo y funcionando
-- **Completitud**: 🎉 **100% - Todos los 6 protocolos implementados**
+- **Ventajas**: Edge network global, ultra rápido
+
+#### **Opción 2: Vercel (Respaldo)** 🔄
+- **Configurado**: ✅ Listo para deployment
+- **Comando**: `npm run deploy:vercel`
+- **Ventajas**: Sin límites de tamaño, mayor estabilidad
+
+### **📦 Backup del Proyecto**
+- **URL**: https://www.genspark.ai/api/files/s/amGxfpoX
+- **Contenido**: Proyecto completo con todos los 6 protocolos
+- **Tamaño**: 327 KB comprimido
+
+### **Completitud**
+🎉 **100% - Todos los 6 protocolos implementados**
+- ✅ Deployment dual configurado
+- ✅ Backup creado y almacenado
+- ✅ Documentación completa en DEPLOYMENT.md
 
 ## 🛠️ Stack Tecnológico
 
