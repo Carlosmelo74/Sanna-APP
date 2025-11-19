@@ -1382,7 +1382,7 @@ app.get('/protocolo1', (c) => {
                     </div>
                     <h3 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">Admisionista</h3>
                     <p class="text-gray-600 mb-6 text-sm">Registro ágil y empático con el paciente</p>
-                    <a href="/protocolo1-admisionista" class="sanna-btn w-full block text-center">
+                    <a href="/admisionista" class="sanna-btn w-full block text-center">
                         Ver Mi Protocolo <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -1396,7 +1396,7 @@ app.get('/protocolo1', (c) => {
                     </div>
                     <h3 class="text-2xl font-bold mb-3" style="color: var(--sanna-green);">Modular</h3>
                     <p class="text-gray-600 mb-6 text-sm">Gestión de espera proactiva en Torre Belén</p>
-                    <a href="/protocolo1-modular" class="sanna-btn w-full block text-center">
+                    <a href="/modular" class="sanna-btn w-full block text-center">
                         Ver Mi Protocolo <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
