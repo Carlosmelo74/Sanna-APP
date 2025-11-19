@@ -74,8 +74,8 @@ Transformar la incertidumbre del paciente en calma y seguridad desde el primer c
 
 #### **Opción 1: Cloudflare Pages (Primaria)** 🌐
 - **URL Principal**: https://sanna-protocolos.pages.dev
-- **Último Deploy**: https://28bb395a.sanna-protocolos.pages.dev
-- **Estado**: ✅ Activo y funcionando
+- **Último Deploy**: https://ff625e9a.sanna-protocolos.pages.dev
+- **Estado**: ✅ Activo - Fix 404 aplicado exitosamente
 - **Ventajas**: Edge network global, ultra rápido
 
 #### **Opción 2: Vercel (Respaldo)** 🔄
@@ -93,6 +93,30 @@ Transformar la incertidumbre del paciente en calma y seguridad desde el primer c
 - ✅ Deployment dual configurado
 - ✅ Backup creado y almacenado
 - ✅ Documentación completa en DEPLOYMENT.md
+
+## 🔧 Últimas Correcciones Aplicadas
+
+### ✅ Fix 404 en Admisionista y Modular desde Protocolo 1 (19-ene-2025)
+**Problema**: Los enlaces a `/admisionista` y `/modular` desde la página del Protocolo 1 retornaban error 404.
+
+**Causa Raíz**: Las líneas 1715-1716 en `src/index.tsx` contenían redirects problemáticos:
+```typescript
+app.get('/admisionista', (c) => c.redirect('/protocolo1-admisionista'))  // 404
+app.get('/modular', (c) => c.redirect('/protocolo1-modular'))            // 404
+```
+Estos redirects apuntaban a rutas inexistentes y sobreescribían las rutas originales correctas.
+
+**Solución Aplicada**:
+1. ✅ Eliminados los redirects problemáticos (líneas 1715-1716)
+2. ✅ Mantenidas las rutas originales funcionales (líneas 680 y 964)
+3. ✅ Rebuild y redespliegue a Cloudflare Pages
+4. ✅ Verificación exitosa: `/admisionista` y `/modular` retornan HTTP 200
+
+**Resultado**: Navegación completa funcionando desde Protocolo 1 → Admisionista/Modular ✨
+
+**Commit**: `85828fd - Fix: Eliminar redirects problemáticos en líneas 1715-1716`
+
+---
 
 ## 🛠️ Stack Tecnológico
 
