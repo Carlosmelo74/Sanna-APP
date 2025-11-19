@@ -1712,8 +1712,9 @@ app.get('/protocolo3', (c) => {
 
 // Alias para mantener compatibilidad con URLs antiguas
 app.get('/anfitriona', (c) => c.redirect('/protocolo1-anfitriona'))
-app.get('/admisionista', (c) => c.redirect('/protocolo1-admisionista'))
-app.get('/modular', (c) => c.redirect('/protocolo1-modular'))
+// Eliminados redirects problemáticos que causaban 404:
+// - /admisionista ahora usa la ruta original (línea 680)
+// - /modular ahora usa la ruta original (línea 964)
 
 // Protocolo #1: Rutas con nuevo formato
 app.get('/protocolo1-anfitriona', (c) => {
