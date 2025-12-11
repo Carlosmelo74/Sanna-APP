@@ -1,0 +1,1187 @@
+================================================================================
+                    CONTENIDO COMPLETO DE LA APLICACIÓN
+                    SANNA CLÍNICA BELÉN - PROTOCOLOS DE ATENCIÓN
+================================================================================
+
+Fecha de Extracción: 19 de Enero de 2025
+URL de la Aplicación: https://sanna-protocolos.pages.dev
+GitHub: https://github.com/Carlosmelo74/Sanna-APP
+
+================================================================================
+                              INFORMACIÓN GENERAL
+================================================================================
+
+TÍTULO DE LA APLICACIÓN:
+Guía de Protocolos de Atención - SANNA Clínica Belén
+
+MISIÓN GENERAL:
+Tu misión: transformar la incertidumbre en calma, desde el primer segundo
+
+INTRODUCCIÓN - TU IMPACTO EN LA EXPERIENCIA DEL PACIENTE:
+
+Un paciente no llega a la clínica buscando un trámite; llega buscando alivio, 
+seguridad y confianza. A menudo, llega con ansiedad, dudas o preocupación.
+
+En los próximos minutos de contacto, es cuando se define gran parte de su 
+experiencia. En ese momento crucial, TÚ ERES EL PROTAGONISTA. Tus gestos, tu 
+sonrisa y tus palabras tienen el poder de transformar la incertidumbre en calma.
+
+ROLES INCLUIDOS EN LA APLICACIÓN:
+
+1. ANFITRIONA 
+   - Torre SANNA
+   - Torre Belén
+   - Primera impresión de SANNA
+   - Bienvenida cálida y orientación clara
+   - Detección de pacientes vulnerables
+
+2. ADMISIONISTA
+   - Punto de seguridad administrativa
+   - Registro ágil y empático
+   - Explicación clara del proceso
+   - Transparencia en trámites
+
+3. MODULAR (Torre Belén)
+   - Enlace de confianza con el médico
+   - Comunicación proactiva de demoras
+   - Gestión de turnos adicionales
+   - Orientación post-consulta
+
+PROTOCOLOS IMPLEMENTADOS:
+✓ Protocolo #1: Primera Impresión y Orientación
+✓ Protocolo #2: Registro y Seguridad Administrativa
+✓ Protocolo #3: Derivación y Coordinación
+✓ Protocolo #4: Gestión de la Espera
+✓ Protocolo #5: Proceso de Pago
+✓ Protocolo #6: Despedida
+
+
+================================================================================
+                    PROTOCOLO #1: PRIMERA IMPRESIÓN Y ORIENTACIÓN
+================================================================================
+
+OBJETIVO DEL PROTOCOLO:
+El primer contacto con el paciente define su tranquilidad y confianza para todo 
+el proceso. Este protocolo asegura que cada paciente sienta que llegó al lugar 
+correcto y que está en buenas manos.
+
+ROLES QUE APLICAN ESTE PROTOCOLO:
+- Anfitriona Torre SANNA
+- Anfitriona Torre Belén
+- Admisionista
+- Modular
+
+--------------------------------------------------------------------------------
+                        ANFITRIONA - TORRE SANNA
+--------------------------------------------------------------------------------
+
+TU MISIÓN:
+Eres el primer rostro que ve el paciente. Tu misión es generar una primera 
+impresión cálida, profesional y orientadora, transmitiendo seguridad desde el 
+primer segundo.
+
+MOMENTOS CLAVE:
+
+═══ MOMENTO 1: BIENVENIDA PROACTIVA ═══
+
+ACCIÓN:
+Levanta la mirada, sonríe y saluda apenas el paciente cruza la puerta, aunque 
+estés ocupada con otra tarea.
+
+GUIÓN:
+"¡Bienvenido a SANNA! En un momentito le atiendo."
+
+O si estás disponible:
+"Buenos días, ¡bienvenido a SANNA! ¿En qué le puedo ayudar hoy?"
+
+
+═══ MOMENTO 2: ORIENTACIÓN CLARA Y RÁPIDA ═══
+
+ACCIÓN:
+Pregunta por el motivo de su visita para dirigirlo correctamente. Usa lenguaje 
+claro y evita siglas médicas.
+
+GUIÓN SEGÚN EL CASO:
+
+→ Consulta externa:
+"Perfecto, las consultas externas son en el 2do piso. Al salir del ascensor, 
+gire a la derecha y verá el mostrador de admisión. ¿Tiene alguna duda?"
+
+→ Emergencias:
+"Las emergencias están en el 1er piso, al fondo del pasillo a mano izquierda. 
+¿Necesita que le acompañe?"
+
+→ Hospitalización:
+"El área de hospitalización está en el 3er piso. Allí le atenderán en el 
+counter de enfermería. ¿Lleva algún documento que le hayan dado?"
+
+→ Laboratorio/Imágenes:
+"El laboratorio está en el sótano 1, bajando por las escaleras o ascensor. 
+¿Viene en ayunas o ya le tomaron muestras?"
+
+
+═══ MOMENTO 3: DETECCIÓN DE PACIENTES VULNERABLES ═══
+
+ACCIÓN:
+Identifica si el paciente requiere atención especial (adulto mayor, embarazada, 
+discapacidad, visible dolor).
+
+GUIÓN:
+"Veo que necesita apoyo. Permítame acompañarle personalmente al área de admisión."
+(Acompáñale físicamente hasta el siguiente punto de atención)
+
+
+═══ MOMENTO 4: DESPEDIDA CON SEGUIMIENTO ═══
+
+ACCIÓN:
+Cierra la interacción asegurándote de que no quedan dudas pendientes.
+
+GUIÓN:
+"Si necesita algo más, aquí estaré. ¡Que todo salga muy bien!"
+
+
+SITUACIONES ESPECIALES:
+
+1. Paciente perdido o confundido:
+   GUIÓN: "Veo que está buscando algo. ¿A qué área necesita ir? Le indico 
+   exactamente cómo llegar."
+
+2. Paciente molesto o quejándose:
+   GUIÓN: "Entiendo su preocupación. Permítame ayudarle a resolverlo. ¿Qué ha 
+   pasado?"
+
+3. Acompañante con dudas sobre estacionamiento:
+   GUIÓN: "El estacionamiento está en el sótano 2. Puede ingresar por la rampa 
+   de la Av. [nombre]. El costo es de S/5 por hora."
+
+4. Paciente pregunta por médico específico:
+   GUIÓN: "El Dr./Dra. [nombre] atiende en consultorio [número] en el 2do piso. 
+   ¿Ya tiene su cita registrada?"
+
+
+--------------------------------------------------------------------------------
+                        ANFITRIONA - TORRE BELÉN
+--------------------------------------------------------------------------------
+
+TU MISIÓN:
+Eres el puente de confianza entre el paciente y el servicio. Tu rol es dar una 
+bienvenida cálida y orientar con claridad, adaptándote a las particularidades 
+de la Torre Belén.
+
+MOMENTOS CLAVE:
+
+═══ MOMENTO 1: BIENVENIDA INMEDIATA ═══
+
+ACCIÓN:
+Sonríe y saluda apenas veas al paciente acercarse. Haz contacto visual.
+
+GUIÓN:
+"¡Buenos días! Bienvenida/o a SANNA Torre Belén. ¿En qué le puedo ayudar?"
+
+
+═══ MOMENTO 2: IDENTIFICACIÓN DE NECESIDAD ═══
+
+ACCIÓN:
+Escucha activamente para entender si viene a consulta, emergencia, laboratorio 
+o a ver a un paciente hospitalizado.
+
+GUIÓN SEGÚN CASO:
+
+→ Consulta externa:
+"Las consultas son en el piso 2. Al subir, encontrará el área de admisión a 
+mano derecha."
+
+→ Emergencia:
+"Emergencias está en este mismo piso, al final del pasillo. ¿Necesita 
+acompañamiento?"
+
+→ Visita a hospitalizado:
+"¿Sabe en qué habitación está? Perfecto, los cuartos están en el piso 3 y 4. 
+Le indico cómo llegar."
+
+→ Laboratorio/Imágenes:
+"El laboratorio está en el piso -1. ¿Ya tiene su orden médica?"
+
+
+═══ MOMENTO 3: ORIENTACIÓN FÍSICA (SI ES NECESARIO) ═══
+
+ACCIÓN:
+Si el paciente se ve confundido, mayor o con movilidad reducida, acompáñalo 
+físicamente al siguiente punto.
+
+GUIÓN:
+"Permítame acompañarle hasta allá para que no se pierda."
+
+
+═══ MOMENTO 4: CIERRE CÁLIDO ═══
+
+ACCIÓN:
+Despídete con una sonrisa y disponibilidad de ayudar si regresa.
+
+GUIÓN:
+"Cualquier duda, aquí estaré para ayudarle. ¡Que se mejore pronto!"
+
+
+SITUACIONES ESPECIALES:
+
+1. Paciente pregunta por horarios de atención:
+   GUIÓN: "Consultas externas es de 8am a 8pm. Emergencias 24 horas."
+
+2. Pregunta por disponibilidad de estacionamiento:
+   GUIÓN: "Tenemos estacionamiento en el sótano. La tarifa es S/5 por hora. 
+   Ingreso por la Av. [nombre]."
+
+3. Paciente no sabe dónde es su cita:
+   GUIÓN: "Con gusto le ayudo. ¿Tiene su comprobante de cita o el nombre del 
+   doctor?"
+
+4. Familiar pidiendo información de paciente internado:
+   GUIÓN: "Para informes de pacientes hospitalizados, debe acercarse al counter 
+   del piso donde está internado. ¿Sabe el número de habitación?"
+
+
+--------------------------------------------------------------------------------
+                           ADMISIONISTA
+--------------------------------------------------------------------------------
+
+TU MISIÓN:
+Eres el punto de seguridad administrativa. Tu objetivo es que el registro sea 
+claro, ágil y empático, transmitiendo tranquilidad.
+
+MOMENTOS CLAVE EN ADMISIÓN:
+
+═══ MOMENTO 1: RECEPCIÓN Y VALIDACIÓN ═══
+
+ACCIÓN:
+Levanta la mirada al recibir al paciente, sonríe y usa su nombre.
+
+GUIÓN:
+"Buenos días. Soy [Tu Nombre]. ¿En qué le puedo ayudar? ¿Me permite su DNI, 
+por favor?"
+
+
+═══ MOMENTO 2: EXPLICACIÓN DEL PROCESO ═══
+
+ACCIÓN:
+Mientras registras los datos, explica qué estás haciendo para que el paciente 
+sienta control.
+
+GUIÓN:
+"Voy a validar sus datos en el sistema... Perfecto, ya está todo registrado. 
+Su consulta es con el Dr./Dra. [nombre] en el consultorio [número]."
+
+
+═══ MOMENTO 3: ENTREGA DE DOCUMENTOS ═══
+
+ACCIÓN:
+Entrega documentos (ticket, voucher, orden) explicando para qué sirve cada uno.
+
+GUIÓN:
+"Este es su ticket de atención con el número [X]. Por favor, guárdelo porque 
+lo necesitará para ingresar al consultorio. En unos minutos le llamarán por su 
+nombre."
+
+
+═══ MOMENTO 4: INDICACIONES FINALES ═══
+
+ACCIÓN:
+Señala físicamente hacia dónde debe dirigirse. No asumas que ya sabe.
+
+GUIÓN:
+"La sala de espera está justo allí (señalar). Por favor tome asiento y esté 
+atento cuando llamen su nombre. ¿Alguna pregunta?"
+
+
+SITUACIONES ESPECIALES:
+
+1. Paciente sin cita previa:
+   GUIÓN: "Entiendo que necesita atención hoy. Permítame verificar si hay 
+   disponibilidad con algún doctor de la especialidad. Un momento, por favor."
+
+2. Paciente con seguro/EPS:
+   GUIÓN: "¿Su atención es por seguro particular o EPS? Perfecto, voy a validar 
+   su cobertura. ¿Tiene su carnet a la mano?"
+
+3. Documentos incompletos:
+   GUIÓN: "Veo que falta [documento]. Sin ese documento no podemos proceder con 
+   el registro. ¿Puede conseguirlo?"
+
+4. Paciente pregunta cuánto tiempo de espera:
+   GUIÓN: "El doctor tiene [X] pacientes antes que usted, el tiempo estimado es 
+   de [X] minutos. Si hay algún cambio, le avisaremos."
+
+
+--------------------------------------------------------------------------------
+                              MODULAR
+--------------------------------------------------------------------------------
+
+TU MISIÓN:
+Eres el enlace de confianza entre el paciente y el médico. Tu misión es 
+mantener informado al paciente sobre su turno, gestionar su espera con empatía 
+y dar indicaciones claras post-consulta.
+
+MOMENTOS CLAVE:
+
+═══ MOMENTO 1: RECEPCIÓN Y CONFIRMACIÓN ═══
+
+ACCIÓN:
+Recibe al paciente que ya fue registrado en admisión. Confirma que está en el 
+lugar correcto.
+
+GUIÓN:
+"Buenos días, bienvenido. ¿Ya pasó por admisión? Perfecto. ¿Me permite su 
+ticket, por favor?"
+
+
+═══ MOMENTO 2: UBICACIÓN EN SALA DE ESPERA ═══
+
+ACCIÓN:
+Indica dónde sentarse y explica cómo será llamado.
+
+GUIÓN:
+"Por favor tome asiento en la sala de espera. Llamaremos su nombre por el 
+altavoz cuando sea su turno. Estamos con [X] pacientes antes que usted."
+
+
+═══ MOMENTO 3: GESTIÓN PROACTIVA DE ESPERA ═══
+
+ACCIÓN:
+Si hay demora o cambio de horario, informa proactivamente. No esperes a que el 
+paciente pregunte.
+
+GUIÓN:
+"Señor/Señora [nombre], le informo que el doctor está con una emergencia y 
+tendremos una demora de aproximadamente [X] minutos. ¿Puede esperar o prefiere 
+reprogramar?"
+
+
+═══ MOMENTO 4: LLAMADA A CONSULTORIO ═══
+
+ACCIÓN:
+Llama al paciente con nombre completo. Acompáñalo visualmente o físicamente 
+hasta la puerta del consultorio.
+
+GUIÓN:
+"Señor/Señora [nombre completo], por favor pase al consultorio [número]. Es 
+esta puerta de aquí (señalar)."
+
+
+═══ MOMENTO 5: POST-CONSULTA - ORIENTACIÓN FINAL ═══
+
+ACCIÓN:
+Al salir de consulta, pregunta si necesita orientación sobre los siguientes 
+pasos.
+
+GUIÓN:
+"¿Le dieron alguna orden de laboratorio o receta? Si necesita tomarle muestras, 
+el laboratorio está en el piso -1. Para pagar puede acercarse a caja."
+
+
+SITUACIONES ESPECIALES:
+
+1. Paciente impaciente por la espera:
+   GUIÓN: "Entiendo que lleva tiempo esperando. El doctor está atendiendo casos 
+   que requieren más tiempo. Usted es el siguiente/[posición]. ¿Necesita algo 
+   mientras espera?"
+
+2. Paciente pregunta si puede salir un momento:
+   GUIÓN: "Sí, puede salir, pero por favor avíseme. Le llamaré al celular 
+   cuando sea su turno. ¿Me deja su número?"
+
+3. Paciente necesita turno adicional con otro especialista:
+   GUIÓN: "Con gusto. ¿Ya tiene la orden del médico? Perfecto, puede coordinar 
+   el siguiente turno en admisión o llamando al [teléfono]."
+
+4. Paciente pregunta por resultados de exámenes:
+   GUIÓN: "Los resultados de laboratorio estarán listos en [tiempo estimado]. 
+   Puede recogerlos en el mismo laboratorio con su DNI."
+
+
+================================================================================
+                PROTOCOLO #2: REGISTRO Y SEGURIDAD ADMINISTRATIVA
+================================================================================
+
+OBJETIVO DEL PROTOCOLO:
+Garantizar que el proceso de registro sea claro, ágil y sin fricciones, 
+transmitiendo seguridad al paciente de que su información está en buenas manos 
+y su proceso será fluido.
+
+ROLES QUE APLICAN ESTE PROTOCOLO:
+- Admisionista
+- Modular
+
+--------------------------------------------------------------------------------
+                           ADMISIONISTA
+--------------------------------------------------------------------------------
+
+TU MISIÓN:
+Eres el guardian de la información del paciente. Tu objetivo es registrar con 
+precisión, explicar con claridad y dar seguimiento, para que el paciente sienta 
+que su caso está bajo control.
+
+PASOS DEL PROCESO DE REGISTRO:
+
+═══ PASO 1: SALUDO Y SOLICITUD DE DOCUMENTOS ═══
+
+ACCIÓN:
+Recibe al paciente con contacto visual, sonrisa y usando su nombre si ya lo 
+conoces.
+
+GUIÓN:
+"Buenos días. ¿En qué le puedo ayudar hoy? Para registrarlo/a, ¿me permite su 
+DNI y su orden médica (si aplica)?"
+
+
+═══ PASO 2: VALIDACIÓN DE DATOS EN EL SISTEMA ═══
+
+ACCIÓN:
+Mientras verificas en el sistema, narra lo que haces para mantener al paciente 
+informado.
+
+GUIÓN:
+"Un momentito, voy a verificar sus datos... Perfecto, ya lo tengo registrado. 
+Veo que su última visita fue el [fecha]."
+
+
+═══ PASO 3: CONFIRMACIÓN DE ESPECIALIDAD Y DOCTOR ═══
+
+ACCIÓN:
+Asegúrate de que el paciente va con el médico correcto. Evita errores de 
+derivación.
+
+GUIÓN:
+"Su cita es con el Dr./Dra. [nombre], especialista en [especialidad]. ¿Es 
+correcto?"
+
+
+═══ PASO 4: EXPLICACIÓN DE COBERTURA (SI APLICA) ═══
+
+ACCIÓN:
+Si tiene seguro o EPS, valida cobertura ANTES de que pase a consulta.
+
+GUIÓN:
+"Su seguro [nombre] cubre esta consulta. Su copago es de S/[monto]. ¿Está de 
+acuerdo?"
+
+Si NO tiene cobertura:
+"Le informo que esta especialidad no está cubierta por su seguro. El costo 
+particular es de S/[monto]. ¿Desea continuar?"
+
+
+═══ PASO 5: GENERACIÓN Y ENTREGA DE TICKET ═══
+
+ACCIÓN:
+Imprime y entrega el ticket explicando su función.
+
+GUIÓN:
+"Este es su ticket de atención. Consérvelo porque lo necesitará para ingresar 
+al consultorio. Su número de turno es [X]."
+
+
+═══ PASO 6: INDICACIÓN DE UBICACIÓN Y TIEMPO DE ESPERA ═══
+
+ACCIÓN:
+Señala físicamente hacia dónde ir. Da estimación realista de tiempo.
+
+GUIÓN:
+"La sala de espera está por allí (señalar). El tiempo estimado es de [X] 
+minutos. Llamarán su nombre por el altavoz."
+
+
+SITUACIONES ESPECIALES:
+
+1. Paciente sin cita previa:
+   GUIÓN: "Veo que no tiene cita. Déjeme verificar si hay disponibilidad hoy. 
+   ¿Es una urgencia o puede esperar?"
+
+2. Datos desactualizados en sistema:
+   GUIÓN: "Veo que su teléfono/dirección está desactualizado. ¿Me ayuda a 
+   actualizarlo? Es importante para enviarle recordatorios."
+
+3. Paciente trae orden médica externa:
+   GUIÓN: "Perfecto, veo que trae orden de otro centro. La voy a registrar en 
+   el sistema. ¿El doctor que lo refiere es externo?"
+
+4. Primer registro (paciente nuevo):
+   GUIÓN: "Veo que es su primera vez en SANNA. Bienvenido/a. Voy a crear su 
+   historia clínica. Necesito sus datos completos: nombre completo, DNI, 
+   teléfono, dirección y fecha de nacimiento."
+
+
+--------------------------------------------------------------------------------
+                              MODULAR
+--------------------------------------------------------------------------------
+
+TU MISIÓN:
+Complementas el trabajo de admisión. Tu rol es validar que el paciente llegó 
+correctamente registrado, confirmar su turno, y gestionar cualquier ajuste de 
+última hora.
+
+PASOS DE VALIDACIÓN:
+
+═══ PASO 1: RECEPCIÓN Y CONFIRMACIÓN DE REGISTRO ═══
+
+ACCIÓN:
+Recibe al paciente que viene de admisión. Confirma que todo está en orden.
+
+GUIÓN:
+"Buenos días. ¿Ya pasó por admisión? Perfecto. ¿Me permite su ticket?"
+
+
+═══ PASO 2: VERIFICACIÓN EN SISTEMA ═══
+
+ACCIÓN:
+Valida en tu sistema que el registro está completo y que el doctor está 
+disponible.
+
+GUIÓN:
+"Déjeme confirmar... Sí, aquí lo tengo registrado. Su turno es con el Dr./Dra. 
+[nombre]. Usted es el paciente número [X] de hoy."
+
+
+═══ PASO 3: ORIENTACIÓN A SALA DE ESPERA ═══
+
+ACCIÓN:
+Indica dónde debe esperar y cómo será llamado.
+
+GUIÓN:
+"Por favor tome asiento en la sala de espera. Cuando sea su turno, llamaré su 
+nombre. Estamos atendiendo al paciente [X], así que le tocará en aproximadamente 
+[tiempo]."
+
+
+═══ PASO 4: GESTIÓN DE CAMBIOS O AJUSTES ═══
+
+ACCIÓN:
+Si hay algún cambio de consultorio, doctor o demora, informa inmediatamente.
+
+GUIÓN:
+"Señor/Señora [nombre], le informo que hubo un cambio. El consultorio ahora es 
+el [número]. Disculpe la molestia."
+
+
+SITUACIONES ESPECIALES:
+
+1. Paciente llega sin pasar por admisión:
+   GUIÓN: "Veo que aún no está registrado en el sistema. Por favor, diríjase 
+   primero a admisión para completar su registro. Está justo allí (señalar)."
+
+2. Paciente con documentación incompleta:
+   GUIÓN: "Falta [documento específico]. Sin eso no podemos proceder. ¿Puede 
+   conseguirlo y regresar?"
+
+3. Paciente pregunta si puede cambiar de doctor:
+   GUIÓN: "Para cambiar de doctor debe coordinarlo en admisión. Ellos validarán 
+   disponibilidad y le asignarán nuevo turno."
+
+4. Paciente registrado para otro día:
+   GUIÓN: "Veo que su cita está programada para el [fecha]. Hoy no está en la 
+   lista. ¿Desea que valide si hay disponibilidad para atenderlo hoy?"
+
+
+================================================================================
+                PROTOCOLO #3: DERIVACIÓN Y COORDINACIÓN
+================================================================================
+
+OBJETIVO DEL PROTOCOLO:
+Asegurar que los pacientes que necesitan atención en otras áreas o especialidades 
+sean derivados correctamente, con información clara y sin perder continuidad en 
+su atención.
+
+ROLES QUE APLICAN ESTE PROTOCOLO:
+- Anfitriona
+- Admisionista
+- Modular
+
+--------------------------------------------------------------------------------
+                           ANFITRIONA
+--------------------------------------------------------------------------------
+
+TU MISIÓN:
+Eres el primer punto de derivación. Tu rol es identificar rápidamente qué 
+necesita el paciente y dirigirlo al área correcta sin demoras.
+
+SITUACIONES DE DERIVACIÓN:
+
+═══ SITUACIÓN 1: PACIENTE QUE NO SABE A DÓNDE IR ═══
+
+ACCIÓN:
+Pregunta por el motivo de visita y el documento que trae (orden médica, cita, 
+referencia).
+
+GUIÓN:
+"¿En qué le puedo ayudar hoy? ¿Trae alguna orden médica o tiene cita agendada?"
+
+DERIVACIÓN SEGÚN CASO:
+→ Con orden de laboratorio: "El laboratorio está en el piso -1."
+→ Con orden de imágenes: "Rayos X está en el piso 1, al fondo del pasillo."
+→ Con cita médica: "Las consultas externas son en el piso 2, admisión."
+→ Emergencia sin documentos: "Emergencias está en el piso 1, le acompaño."
+
+
+═══ SITUACIÓN 2: PACIENTE DERIVADO DE CONSULTA EXTERNA A EMERGENCIA ═══
+
+ACCIÓN:
+Si el paciente viene de consulta y necesita atención urgente, prioriza y 
+acompáña.
+
+GUIÓN:
+"Veo que viene de consulta y le derivaron a emergencia. Permítame acompañarle 
+para que lo atiendan rápido. ¿Trae su orden médica?"
+
+
+═══ SITUACIÓN 3: PACIENTE QUE NECESITA MÚLTIPLES SERVICIOS ═══
+
+ACCIÓN:
+Explica el orden lógico para que no se pierda.
+
+GUIÓN:
+"Entiendo que necesita laboratorio, rayos y luego consulta. El orden es: 
+primero laboratorio (piso -1), luego rayos (piso 1), y finalmente consulta 
+(piso 2). ¿Está claro?"
+
+
+SITUACIONES ESPECIALES:
+
+1. Paciente referido de otro centro médico:
+   GUIÓN: "Veo que viene referido de [centro]. ¿Trae su carta de derivación? 
+   Perfecto, debe ir directamente a admisión en el piso 2."
+
+2. Paciente que necesita atención especializada no disponible:
+   GUIÓN: "Lamentablemente esa especialidad no la tenemos aquí. Le recomiendo 
+   acercarse a nuestra sede de [ubicación] donde sí cuentan con ese servicio."
+
+
+--------------------------------------------------------------------------------
+                      ADMISIONISTA / MODULAR
+--------------------------------------------------------------------------------
+
+TU MISIÓN:
+Eres el coordinador de la derivación administrativa. Tu rol es gestionar que el 
+paciente pase correctamente de una especialidad a otra o de un servicio a otro.
+
+SITUACIONES DE DERIVACIÓN:
+
+═══ SITUACIÓN 1: DERIVACIÓN A OTRA ESPECIALIDAD ═══
+
+ACCIÓN:
+Cuando un doctor deriva a otro especialista, valida que la orden esté completa 
+y coordina el siguiente turno.
+
+GUIÓN:
+"Veo que el doctor le derivó a [especialidad]. ¿Le dieron fecha para esa cita 
+o debo agendarla ahora? Déjeme verificar disponibilidad."
+
+
+═══ SITUACIÓN 2: DERIVACIÓN A SERVICIOS AUXILIARES (LAB, RAYOS, ECO) ═══
+
+ACCIÓN:
+Explica el proceso completo: dónde ir, qué llevar, cuándo regresan resultados.
+
+GUIÓN:
+"El doctor le ordenó [examen]. Debe ir a [área], está en el piso [X]. Lleve 
+esta orden. Los resultados estarán listos en [tiempo]. ¿Alguna duda?"
+
+
+═══ SITUACIÓN 3: DERIVACIÓN A HOSPITALIZACIÓN ═══
+
+ACCIÓN:
+Si el paciente necesita internamiento, coordina con el área de hospitalización 
+antes de enviarlo.
+
+GUIÓN:
+"El doctor ha indicado que requiere hospitalización. Voy a coordinar con el 
+área para verificar disponibilidad de cama. Un momento, por favor."
+
+(Llamada interna al área de hospitalización)
+
+"Ya está coordinado. Debe subir al piso [X], habitación [número]. Le están 
+esperando."
+
+
+═══ SITUACIÓN 4: DERIVACIÓN A EMERGENCIA DESDE CONSULTA ═══
+
+ACCIÓN:
+Si un paciente en consulta necesita atención urgente, acompáñalo o coordina que 
+alguien lo acompañe.
+
+GUIÓN:
+"Veo que necesita atención inmediata. Voy a coordinar para que lo atiendan en 
+emergencia ahora mismo. Por favor acompáñeme."
+
+
+SITUACIONES ESPECIALES:
+
+1. Paciente necesita interconsulta con múltiples especialistas:
+   GUIÓN: "Entiendo que necesita ver a [X] especialistas. Voy a coordinar las 
+   citas en orden lógico para que no tenga que venir varias veces. ¿Qué días 
+   tiene disponibilidad?"
+
+2. Derivación externa (a otro centro SANNA):
+   GUIÓN: "Esa especialidad está disponible en nuestra sede de [ubicación]. 
+   ¿Quiere que le agende la cita allá o prefiere llamar usted directamente? 
+   El teléfono es [número]."
+
+3. Paciente derivado sin orden médica:
+   GUIÓN: "Para que le atiendan en [área], necesita la orden del médico. 
+   ¿Ya pasó por consulta? Si no, debe agendar cita con el doctor primero."
+
+
+================================================================================
+                    PROTOCOLO #4: GESTIÓN DE LA ESPERA
+================================================================================
+
+OBJETIVO DEL PROTOCOLO:
+La espera es uno de los momentos más críticos en la experiencia del paciente. 
+Este protocolo busca transformar la espera de un momento de ansiedad a un momento 
+de tranquilidad mediante información proactiva y empatía.
+
+ROLES QUE APLICAN ESTE PROTOCOLO:
+- Modular (principalmente)
+- Admisionista (apoyo)
+
+--------------------------------------------------------------------------------
+                              MODULAR
+--------------------------------------------------------------------------------
+
+TU MISIÓN:
+Eres el gestor de la tranquilidad durante la espera. Tu misión es mantener 
+informado al paciente, gestionar su ansiedad con comunicación proactiva, y 
+responder con empatía a sus preocupaciones.
+
+═══ PRINCIPIO FUNDAMENTAL: COMUNICACIÓN PROACTIVA ═══
+
+REGLA DE ORO:
+No esperes a que el paciente pregunte. Anticípate. La falta de información 
+genera ansiedad.
+
+EJEMPLO:
+❌ MAL: Esperar a que el paciente pregunte "¿Cuánto falta?"
+✅ BIEN: Cada 15-20 minutos, informar el estado de la espera sin que pregunten.
+
+
+MOMENTOS CLAVE DURANTE LA ESPERA:
+
+═══ MOMENTO 1: ESTABLECER EXPECTATIVA INICIAL ═══
+
+ACCIÓN:
+Al momento de recibir al paciente, dale un tiempo estimado realista.
+
+GUIÓN:
+"El doctor está atendiendo al paciente número [X]. Usted es el número [Y], por 
+lo que el tiempo estimado es de [Z] minutos. Le avisaré si hay algún cambio."
+
+
+═══ MOMENTO 2: ACTUALIZACIÓN PROACTIVA (CADA 15-20 MIN) ═══
+
+ACCIÓN:
+Sal de tu área y comunica el estado actual a los que esperan.
+
+GUIÓN:
+"Señores, les informo que vamos por el paciente número [X]. Aproximadamente 
+[tiempo] más de espera. Gracias por su paciencia."
+
+
+═══ MOMENTO 3: GESTIÓN DE DEMORAS INESPERADAS ═══
+
+ACCIÓN:
+Si hay un retraso significativo (emergencia, cirugía extendida), informa 
+inmediatamente.
+
+GUIÓN:
+"Señores, les informo que el doctor tuvo una emergencia. La demora adicional 
+será de aproximadamente [X] minutos. Si alguien no puede esperar, con gusto le 
+reprogramamos la cita. Disculpen las molestias."
+
+
+═══ MOMENTO 4: ATENCIÓN A SIGNOS DE IMPACIENCIA ═══
+
+ACCIÓN:
+Si un paciente se ve inquieto, ansioso o molesto, acércate proactivamente.
+
+GUIÓN:
+"Señor/a [nombre], veo que lleva tiempo esperando. Entiendo su preocupación. 
+Usted es el siguiente. ¿Necesita algo mientras tanto? ¿Un vaso de agua?"
+
+
+═══ MOMENTO 5: GESTIÓN DE PACIENTES QUE NECESITAN SALIR ═══
+
+ACCIÓN:
+Si un paciente necesita salir (baño, llamada urgente, etc.), coordina sin perder 
+su turno.
+
+GUIÓN:
+"Por supuesto, puede salir. Déjeme su número de celular. Le llamaré 5 minutos 
+antes de su turno para que regrese."
+
+
+SITUACIONES ESPECIALES DURANTE LA ESPERA:
+
+1. Paciente pregunta repetidamente "¿Cuánto falta?":
+   GUIÓN: "Entiendo su preocupación. Le faltan [X] personas. Son aproximadamente 
+   [tiempo]. Créame que estamos trabajando lo más rápido posible. ¿Hay alguna 
+   urgencia particular?"
+
+2. Paciente se queja de la demora:
+   GUIÓN: "Tiene toda la razón en sentirse molesto. Lamentamos la demora. El 
+   doctor está dedicando el tiempo necesario a cada paciente para dar una buena 
+   atención. Gracias por su paciencia."
+
+3. Paciente necesita ir al baño:
+   GUIÓN: "Por supuesto. Los baños están [ubicación]. Si le toca mientras está 
+   allí, esperamos. Vaya tranquilo/a."
+
+4. Acompañante pregunta si puede ir a comprar algo:
+   GUIÓN: "Sí, puede salir. Le sugiero que no demore más de [tiempo estimado]. 
+   Si necesitan llamarlo, ¿me deja su número?"
+
+5. Paciente en evidente malestar físico durante la espera:
+   GUIÓN: "Veo que se siente mal. ¿Quiere que le priorice para que lo vea el 
+   doctor antes? Déjeme coordinar."
+
+6. Sala de espera llena, pacientes de pie:
+   GUIÓN: "Disculpen que no haya suficientes asientos. Si alguien necesita 
+   sentarse por alguna condición, por favor avíseme y coordinamos."
+
+7. Paciente pregunta si puede cambiar su cita para otro día:
+   GUIÓN: "Por supuesto. Si hoy no puede esperar, con gusto le reprogramo. 
+   ¿Qué día le viene bien? Veamos disponibilidad..."
+
+
+TÉCNICAS PARA REDUCIR LA PERCEPCIÓN DE ESPERA:
+
+1. Información Visual:
+   Coloca un pizarrón o pantalla con: "Atendiendo al paciente N°[X]"
+
+2. Comunicación Regular:
+   Cada 15-20 minutos, sal y da un update general, aunque no te pregunten.
+
+3. Ambiente Cómodo:
+   Asegúrate de que haya agua disponible, aire acondicionado funcionando, baños 
+   limpios.
+
+4. Empatía Verbal:
+   Usa frases como: "Entiendo que la espera es incómoda", "Gracias por su 
+   paciencia", "Apreciamos su comprensión".
+
+5. Distracción Positiva:
+   Si hay TV o música, asegúrate de que funcione. Si hay revistas, que estén 
+   ordenadas.
+
+
+================================================================================
+                    PROTOCOLO #5: PROCESO DE PAGO
+================================================================================
+
+OBJETIVO DEL PROTOCOLO:
+Gestionar el proceso de pago de forma transparente, clara y sin fricciones, 
+asegurando que el paciente entiende qué está pagando y por qué, evitando 
+sorpresas desagradables.
+
+ROLES QUE APLICAN ESTE PROTOCOLO:
+- Admisionista (principalmente)
+- Modular (apoyo)
+
+--------------------------------------------------------------------------------
+                           ADMISIONISTA
+--------------------------------------------------------------------------------
+
+TU MISIÓN:
+Eres el gestor de la transparencia financiera. Tu objetivo es que el paciente 
+entienda claramente qué está pagando, cuánto y por qué, sin generar confusión 
+ni incomodidad.
+
+═══ PRINCIPIO FUNDAMENTAL: TRANSPARENCIA TOTAL ═══
+
+REGLA DE ORO:
+Nunca des precios ambiguos. Siempre desglosa el costo y explica cada ítem.
+
+EJEMPLO:
+❌ MAL: "Son S/250."
+✅ BIEN: "El costo total es S/250, que incluye: consulta S/150, examen de 
+laboratorio S/80, y materiales S/20."
+
+
+MOMENTOS CLAVE EN EL PROCESO DE PAGO:
+
+═══ MOMENTO 1: INFORMACIÓN DE COSTOS ANTES DE LA ATENCIÓN ═══
+
+ACCIÓN:
+Si el paciente es particular (sin seguro), informa el costo ANTES de que pase 
+a consulta.
+
+GUIÓN:
+"El costo de la consulta con el Dr./Dra. [nombre] es de S/[monto]. ¿Está de 
+acuerdo con proceder?"
+
+
+═══ MOMENTO 2: VALIDACIÓN DE COBERTURA DE SEGURO ═══
+
+ACCIÓN:
+Si tiene seguro, valida cobertura en tiempo real y explica qué cubre y qué no.
+
+GUIÓN:
+"Su seguro [nombre] cubre [X]% de la consulta. Su copago es de S/[monto]. 
+¿Está de acuerdo?"
+
+Si hay servicios NO cubiertos:
+"Le informo que [servicio específico] NO está cubierto por su seguro. El costo 
+adicional sería de S/[monto]. ¿Desea proceder igual?"
+
+
+═══ MOMENTO 3: DESGLOSE CLARO DE COSTOS FINALES ═══
+
+ACCIÓN:
+Al momento de cobrar, muestra el detalle ítem por ítem.
+
+GUIÓN:
+"El total a pagar es S/[monto]. Le detallo:
+- Consulta médica: S/[monto]
+- Examen de laboratorio: S/[monto]
+- Medicamentos: S/[monto]
+¿Tiene alguna duda sobre los costos?"
+
+
+═══ MOMENTO 4: OPCIONES DE PAGO ═══
+
+ACCIÓN:
+Explica las formas de pago disponibles.
+
+GUIÓN:
+"Puede pagar en efectivo, tarjeta de crédito/débito, o transferencia. ¿Cómo 
+desea cancelar?"
+
+
+═══ MOMENTO 5: ENTREGA DE COMPROBANTE Y EXPLICACIÓN ═══
+
+ACCIÓN:
+Entrega el comprobante (boleta o factura) y explica qué incluye.
+
+GUIÓN:
+"Esta es su boleta/factura. Incluye el detalle de todos los servicios. 
+Guárdela porque la necesitará si presenta reembolso a su seguro o para su 
+declaración de impuestos."
+
+
+SITUACIONES ESPECIALES EN PAGOS:
+
+1. Paciente sorprendido por el costo:
+   GUIÓN: "Entiendo su sorpresa. Le explico el desglose: [detallar cada ítem]. 
+   ¿Hay algo que no le quede claro?"
+
+2. Paciente sin dinero suficiente:
+   GUIÓN: "Entiendo la situación. ¿Tiene tarjeta de crédito? También aceptamos 
+   pago en cuotas. Si no, podemos coordinar un plan de pago. ¿Qué le viene mejor?"
+
+3. Paciente quiere factura en lugar de boleta:
+   GUIÓN: "Por supuesto. ¿Me da su RUC y razón social? Procedo a emitir la 
+   factura."
+
+4. Paciente pregunta por reembolso de seguro:
+   GUIÓN: "Para solicitar reembolso, debe presentar esta boleta/factura a su 
+   seguro junto con el informe médico. El tiempo de reembolso depende de su 
+   aseguradora."
+
+5. Discrepancia entre costo informado y costo final:
+   GUIÓN: "Le pido disculpas. Hubo un error en la información inicial. El costo 
+   real es S/[monto] porque [explicar razón]. Lamento la confusión."
+
+6. Paciente quiere pagar después:
+   GUIÓN: "Lamentablemente, nuestra política es pago previo/posterior a la 
+   atención. ¿Podría coordinar con algún familiar que le ayude con el pago?"
+
+
+--------------------------------------------------------------------------------
+                              MODULAR
+--------------------------------------------------------------------------------
+
+TU MISIÓN:
+Apoyas en el proceso de pago post-consulta. Tu rol es asegurarte de que el 
+paciente sabe qué debe pagar y dónde hacerlo.
+
+MOMENTOS CLAVE:
+
+═══ MOMENTO 1: ORIENTACIÓN POST-CONSULTA ═══
+
+ACCIÓN:
+Cuando el paciente sale de consulta, pregunta si le dieron órdenes de pago.
+
+GUIÓN:
+"¿El doctor le ordenó algún examen o procedimiento adicional? Si es así, debe 
+pasar por caja para cancelar antes de realizar el servicio. Caja está en el 
+piso [X]."
+
+
+═══ MOMENTO 2: CONFIRMACIÓN DE PAGO REALIZADO ═══
+
+ACCIÓN:
+Si el paciente regresa con comprobante de pago de un servicio (lab, rayos), 
+valídalo antes de enviarle al servicio.
+
+GUIÓN:
+"Perfecto, veo que ya canceló. Con este comprobante puede dirigirse a 
+[servicio]. Está en el piso [X]."
+
+
+SITUACIONES ESPECIALES:
+
+1. Paciente pregunta cuánto costará un examen:
+   GUIÓN: "El costo exacto se lo darán en caja. Pero aproximadamente [servicio] 
+   cuesta S/[rango]. Si tiene seguro, parte puede estar cubierto."
+
+2. Paciente no quiere pagar un examen ordenado:
+   GUIÓN: "Entiendo. Si no desea realizar el examen ahora, puede llevarse la 
+   orden y hacerlo cuando pueda. La orden tiene validez de [tiempo]."
+
+
+================================================================================
+                        PROTOCOLO #6: DESPEDIDA
+================================================================================
+
+OBJETIVO DEL PROTOCOLO:
+Cerrar la experiencia del paciente con una despedida cálida y memorable, 
+asegurando que se va con claridad sobre sus próximos pasos y sintiendo que fue 
+bien cuidado.
+
+RESPONSABILIDAD COMPARTIDA:
+Este protocolo aplica a QUIEN TENGA EL ÚLTIMO CONTACTO CON EL PACIENTE, ya sea 
+Anfitriona, Admisionista o Modular.
+
+PRINCIPIO FUNDAMENTAL:
+La despedida es tan importante como la bienvenida. Es el último recuerdo que el 
+paciente tendrá de SANNA. Haz que cuente.
+
+--------------------------------------------------------------------------------
+                      TÉCNICAS DE DESPEDIDA EFECTIVA
+--------------------------------------------------------------------------------
+
+═══ TÉCNICA 1: DESPEDIDA CON CONFIRMACIÓN ═══
+
+ACCIÓN:
+Antes de que el paciente se vaya, confirma que entiende sus próximos pasos.
+
+GUIÓN:
+"Antes de que se vaya, permítame confirmar que tiene claro todo:
+- ¿Tiene sus recetas/órdenes?
+- ¿Sabe cuándo es su próxima cita?
+- ¿Tiene alguna duda sobre las indicaciones del doctor?
+- ¿Necesita ayuda con algo más?"
+
+
+═══ TÉCNICA 2: DESPEDIDA CON SEGUIMIENTO ═══
+
+ACCIÓN:
+Ofrece un punto de contacto para dudas posteriores.
+
+GUIÓN:
+"Si tiene alguna duda después, puede llamar a nuestro teléfono [número] o 
+regresar cuando guste. Estamos para ayudarle."
+
+
+═══ TÉCNICA 3: DESPEDIDA CON EMPATÍA Y CALIDEZ ═══
+
+ACCIÓN:
+Despídete con una frase que transmita cuidado genuino.
+
+GUIÓN:
+"Cuídese mucho. Esperamos que se mejore pronto. Fue un gusto atenderle."
+
+O si es un familiar:
+"Cuide mucho a su [familiar]. Si necesitan algo, aquí estamos."
+
+
+SITUACIONES DIVERSAS DE DESPEDIDA:
+
+═══ SITUACIÓN 1: PACIENTE QUE SALE DE CONSULTA EXTERNA ═══
+
+GUIÓN COMPLETO (MODULAR/ADMISIONISTA):
+"¿Cómo le fue con el doctor? ¿Le dieron recetas u órdenes de exámenes?
+
+[Si tiene órdenes]
+Perfecto. Para el laboratorio, debe ir al piso -1. Los resultados estarán 
+listos en [tiempo]. ¿Le agendaron su próxima cita?
+
+[Si no tiene próxima cita]
+¿Necesita agendar una cita de control? Puedo hacerlo ahora o puede llamar 
+después al [teléfono].
+
+¿Alguna otra duda? Perfecto. Que se mejore pronto. Cuídese mucho."
+
+
+═══ SITUACIÓN 2: PACIENTE QUE SALE DE EMERGENCIA ═══
+
+GUIÓN COMPLETO (CUALQUIER ROL):
+"¿Ya le dieron el alta? ¿Le explicaron las indicaciones a seguir en casa?
+
+[Si tiene recetas]
+Veo que le recetaron medicamentos. La farmacia está en el piso [X]. Si no 
+encuentra alguno, puede preguntar por opciones.
+
+[Indicaciones finales]
+Es importante que siga las indicaciones del doctor. Si presenta [síntoma de 
+alarma], regrese inmediatamente a emergencia.
+
+¿Le quedó claro? Perfecto. Cuídese mucho y que se recupere pronto."
+
+
+═══ SITUACIÓN 3: FAMILIAR DE PACIENTE HOSPITALIZADO ═══
+
+GUIÓN COMPLETO (ANFITRIONA/MODULAR):
+"¿Cómo sigue su familiar? ¿Ya le dieron información los doctores?
+
+[Orientación]
+Recuerde que los horarios de visita son de [horario]. Puede traer [artículos 
+permitidos].
+
+Si necesita información sobre su familiar, pregunte en el counter del piso 
+donde está internado.
+
+¿Alguna otra duda? Perfecto. Mucha fuerza y esperamos que se recupere pronto."
+
+
+MOMENTOS ESPECIALES DE DESPEDIDA:
+
+1. Paciente que se va satisfecho:
+   GUIÓN: "Me alegra que todo haya salido bien. Gracias por confiar en SANNA. 
+   ¡Que tenga un excelente día!"
+
+2. Paciente que se va molesto o insatisfecho:
+   GUIÓN: "Lamento que su experiencia no haya sido la mejor. Valoramos su 
+   opinión. Si desea dejar un comentario, puede hacerlo en [canal de quejas]. 
+   A pesar de todo, espero que se mejore pronto."
+
+3. Paciente con diagnóstico delicado:
+   GUIÓN: "Sé que recibió noticias difíciles. Estamos aquí para apoyarle en lo 
+   que necesite. Si tiene dudas, no dude en regresar o llamar. Mucha fuerza."
+
+
+PALABRAS Y FRASES PODEROSAS PARA LA DESPEDIDA:
+
+✓ "Fue un gusto atenderle"
+✓ "Gracias por confiar en nosotros"
+✓ "Cuídese mucho"
+✓ "Esperamos que se mejore pronto"
+✓ "Estamos para ayudarle cuando nos necesite"
+✓ "¡Que tenga un excelente día!"
+✓ "Mucha fuerza y ánimo"
+✓ "Esperamos verle recuperado pronto"
+
+
+================================================================================
+                                FIN DEL DOCUMENTO
+================================================================================
+
+NOTA FINAL:
+Este documento contiene TODOS los protocolos, guiones, situaciones y técnicas 
+implementadas en la aplicación web de SANNA Clínica Belén.
+
+Para acceder a la versión digital interactiva:
+🌐 https://sanna-protocolos.pages.dev
+
+Para consultas o sugerencias:
+📧 Contactar al equipo de Mentoring & Training
+
+Elaborado por: Carlos Melo - Mentoring & Training
+Fecha: Enero 2025
+
+================================================================================
